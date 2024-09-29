@@ -1,0 +1,15 @@
+"C:\IARSystems\EWARMv8_0\arm\bin\armproc.dll" 
+
+"C:\IARSystems\EWARMv8_0\arm\bin\armjlink2.dll" 
+
+"F:\Frey Firmware\Src\Debug\Exe\Frey.out" 
+
+--plugin "C:\IARSystems\EWARMv8_0\arm\bin\armbat.dll" 
+
+--device_macro "C:\IARSystems\EWARMv8_0\arm\config\debugger\SiliconLaboratories\Trace_EFM32TG.dmac" 
+
+--flash_loader "C:\IARSystems\EWARMv8_0\arm\config\flashloader\SiliconLaboratories\FlashGECKOT1.board" 
+
+
+
+

@@ -1,0 +1,1752 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.1.15669/W32 for ARM                31/Oct/2018  20:06:24
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  D:\ISC\Frey\Frey Firmware\Src\Debug\Exe\Frey.out
+#    Map file     =  D:\ISC\Frey\Frey Firmware\Src\Debug\List\Frey.map
+#    Command line =  
+#        -f C:\Users\dilawar.ali\AppData\Local\Temp\EW309D.tmp
+#        ("D:\ISC\Frey\Frey Firmware\Src\Debug\Obj\armv6m_cpu_a.o"
+#        "D:\ISC\Frey\Frey Firmware\Src\Debug\Obj\armv6m_os_cpu_a.o"
+#        "D:\ISC\Frey\Frey Firmware\Src\Debug\Obj\armv6m_os_cpu_c.o"
+#        "D:\ISC\Frey\Frey Firmware\Src\Debug\Obj\armv6m_v7m_cpu_int.o"
+#        "D:\ISC\Frey\Frey Firmware\Src\Debug\Obj\auth.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\bitmap.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\bsp_cpu.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\bsp_os.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\Cellular.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\CellularATCommands.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\clk.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\clk_cmd.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\common.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\cpu_core.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\DataFlash.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\dmadrv.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_assert.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_cmu.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_core.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_emu.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_gpio.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_ldma.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_leuart.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_rtc.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_rtcc.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_usart.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\em_wdog.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\Event.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\ExtCommunication.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\FileCommit.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\gpiointerrupt.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\GPS.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\jsmn.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\kal_kernel.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\lib_ascii.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\lib_math.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\lib_mem.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\lib_str.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\main.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\map.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\nvm.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\nvm_config.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\nvm_hal.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_cfg_app.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_core.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_dbg.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_flag.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_mem.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_mon.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_msg.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_mutex.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_prio.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_q.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_sem.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_stat.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_task.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_tick.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_time.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_tmr.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\os_var.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\platform_mgr.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\rtcdriver.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\rtos_err_str.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\sleep.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\slist.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\SPI_Comm.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\spidrv.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\startup_efm32tg11b.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\SysTask.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\system_efm32tg11b.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\Timer.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\uartdrv.o" "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Obj\ustimer.o" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb -o "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\Exe\Frey.out" --map "D:\ISC\Frey\Frey
+#        Firmware\Src\Debug\List\Frey.map" --config "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench
+#        8.0\arm\config\linker\SiliconLaboratories\EFM32TG11B120F128.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0001ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20007fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+keep { section .intvec };
+
+  Section            Kind        Address     Size  Object
+  -------            ----        -------     ----  ------
+"A0":                                        0xc0
+  .intvec            ro code  0x00000000     0xc0  startup_efm32tg11b.o [1]
+                            - 0x000000c0     0xc0
+
+"P1":                                     0x13732
+  .text              ro code  0x000000c0   0x1a40  SPI_Comm.o [1]
+  .text              ro code  0x00001b00      0x4  em_assert.o [1]
+  .text              ro code  0x00001b04    0x4d8  em_gpio.o [1]
+  .text              ro code  0x00001fdc   0x1324  spidrv.o [1]
+  .text              ro code  0x00003300     0x58  ABImemset.o [5]
+  .text              ro code  0x00003358     0x5c  ABImemcpy.o [5]
+  .text              ro code  0x000033b4    0x100  gpiointerrupt.o [1]
+  .text              ro code  0x000034b4     0xe0  I32DivModFast.o [5]
+  .text              ro code  0x00003594    0x864  rtcdriver.o [1]
+  .text              ro code  0x00003df8     0x98  strcmp.o [5]
+  .text              ro code  0x00003e90     0x24  strncpy.o [5]
+  .text              ro code  0x00003eb4     0xb8  Event.o [1]
+  .text              ro code  0x00003f6c    0x4fc  ExtCommunication.o [1]
+  .text              ro code  0x00004468    0x478  os_q.o [1]
+  .text              ro code  0x000048e0    0xb18  os_task.o [1]
+  .text              ro code  0x000053f8    0xed4  em_cmu.o [1]
+  .text              ro code  0x000062cc    0x39c  em_usart.o [1]
+  .text              ro code  0x00006668      0x8  em_core.o [1]
+  .text              ro code  0x00006670      0xa  em_core.o [1]
+  .text              ro code  0x0000667a     0x22  xsscin.o [3]
+  .text              ro code  0x0000669c    0x570  dmadrv.o [1]
+  .text              ro code  0x00006c0c     0x74  em_core.o [1]
+  .text              ro code  0x00006c80      0x2  IntDivZer.o [5]
+  .text              ro code  0x00006c82      0xa  xsprout.o [3]
+  .text              ro code  0x00006c8c     0xd8  em_rtcc.o [1]
+  .text              ro code  0x00006d64     0x32  I64Mul.o [5]
+  .text              ro code  0x00006d96     0x6a  I64DivMod.o [5]
+  .text              ro code  0x00006e00     0x4c  snprintf.o [3]
+  .text              ro code  0x00006e4c     0x40  sprintf.o [3]
+  .text              ro code  0x00006e8c     0x34  IxxToDbl.o [4]
+  .text              ro code  0x00006ec0    0xb78  pow64.o [4]
+  .text              ro code  0x00007a38     0xc2  DblDiv.o [4]
+  .text              ro code  0x00007afa     0x62  DblToFlt.o [4]
+  .text              ro code  0x00007b5c     0x32  FltToDbl.o [4]
+  .text              ro code  0x00007b8e     0xaa  FltDiv.o [4]
+  .text              ro code  0x00007c38     0x3a  FltToS32.o [4]
+  .rodata            const    0x00007c72      0x2  os_cfg_app.o [1]
+  .text              ro code  0x00007c74     0x36  IxxToFlt.o [4]
+  .text              ro code  0x00007caa    0x120  FltAddSub.o [4]
+  .text              ro code  0x00007dca     0xb0  FltMul.o [4]
+  .text              ro code  0x00007e7a      0xe  gmtime.o [3]
+  .text              ro code  0x00007e88    0x4b4  jsmn.o [1]
+  .text              ro code  0x0000833c     0x2c  strncmp.o [3]
+  .text              ro code  0x00008368     0x32  strstr.o [3]
+  .text              ro code  0x0000839a      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0000839c     0x54  cpu_core.o [1]
+  CODE               ro code  0x000083f0     0x1e  armv6m_cpu_a.o [1]
+  .text              ro code  0x0000840e      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00008410    0x1cc  os_msg.o [1]
+  .text              ro code  0x000085dc    0x918  os_core.o [1]
+  .text              ro code  0x00008ef4      0xc  bsp_cpu.o [1]
+  .text              ro code  0x00008f00    0x180  armv6m_os_cpu_c.o [1]
+  .text              ro code  0x00009080     0xa8  os_prio.o [1]
+  .text              ro code  0x00009128    0x188  os_time.o [1]
+  .text              ro code  0x000092b0    0x5a6  os_mutex.o [1]
+  .text              ro code  0x00009856      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00009858     0x9c  system_efm32tg11b.o [1]
+  .text              ro code  0x000098f4    0x120  em_emu.o [1]
+  .text              ro code  0x00009a14    0x394  em_ldma.o [1]
+  .text              ro code  0x00009da8     0xa4  em_core.o [1]
+  .text              ro code  0x00009e4c      0x2  I64DivZer.o [5]
+  .text              ro code  0x00009e4e      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00009e50    0xe7a  xprintffull_nomb.o [3]
+  .text              ro code  0x0000acca     0x24  DblCmpEq.o [4]
+  .text              ro code  0x0000acee     0x32  DblCmpLe.o [4]
+  .text              ro code  0x0000ad20    0x184  DblMul.o [4]
+  .text              ro code  0x0000aea4    0x1b4  DblAddSub.o [4]
+  .text              ro code  0x0000b058     0x52  DblToI32.o [4]
+  .text              ro code  0x0000b0aa     0x32  DblCmpGe.o [4]
+  .text              ro code  0x0000b0dc    0x3bc  iar_Exp64.o [4]
+  .text              ro code  0x0000b498    0x118  xttotm.o [3]
+  .text              ro code  0x0000b5b0     0x18  strchr.o [5]
+  .text              ro code  0x0000b5c8     0x1c  os_mem.o [1]
+  .text              ro code  0x0000b5e4    0x47c  os_tick.o [1]
+  .text              ro code  0x0000ba60    0x2d4  os_stat.o [1]
+  .text              ro code  0x0000bd34    0x240  os_tmr.o [1]
+  .text              ro code  0x0000bf74     0xb8  os_cfg_app.o [1]
+  CODE               ro code  0x0000c02c     0xac  armv6m_os_cpu_a.o [1]
+  .text              ro code  0x0000c0d8     0x48  xfail_s.o [3]
+  .text              ro code  0x0000c120     0x10  strlen.o [5]
+  .text              ro code  0x0000c130     0x18  memchr.o [5]
+  .text              ro code  0x0000c148     0x4c  xlocale_c.o [3]
+  .text              ro code  0x0000c194      0x6  xisdst_nop.o [3]
+  .text              ro code  0x0000c19a      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0000c19c     0x6c  xDaysTo.o [3]
+  .text              ro code  0x0000c208      0xa  abort.o [3]
+  .text              ro code  0x0000c212      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0000c214     0x14  exit.o [6]
+  .text              ro code  0x0000c228     0x7c  iarttio.o [6]
+  .text              ro code  0x0000c2a4      0x8  XShttio.o [3]
+  .text              ro code  0x0000c2ac   0x1040  uartdrv.o [1]
+  .text              ro code  0x0000d2ec     0x78  em_leuart.o [1]
+  .text              ro code  0x0000d364    0xdf0  xscanffull_nomb.o [3]
+  .text              ro code  0x0000e154     0x12  isspace.o [3]
+  .text              ro code  0x0000e166     0xa8  iar_Stollx.o [3]
+  .text              ro code  0x0000e20e      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0000e210    0x1d8  iar_Stoullx.o [3]
+  .text              ro code  0x0000e3e8    0x436  strto64.o [4]
+  .text              ro code  0x0000e81e     0x12  isalpha.o [3]
+  .text              ro code  0x0000e830     0x12  tolower.o [3]
+  .text              ro code  0x0000e842    0x118  iar_Stopfx.o [3]
+  .text              ro code  0x0000e95a      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0000e95c    0x1ec  iar_Stoflt.o [3]
+  .text              ro code  0x0000eb48    0x240  iar_Stoxflt.o [3]
+  .text              ro code  0x0000ed88    0x974  Cellular.o [1]
+  .text              ro code  0x0000f6fc    0x178  Timer.o [1]
+  .text              ro code  0x0000f874    0x758  CellularATCommands.o [1]
+  .text              ro code  0x0000ffcc    0x2dc  main.o [1]
+  .text              ro code  0x000102a8     0x8c  iar_Stolx.o [3]
+  .text              ro code  0x00010334     0xf8  mktime.o [3]
+  .text              ro code  0x0001042c     0x28  sscanf.o [3]
+  .text              ro code  0x00010454     0x28  printf.o [3]
+  .text              ro code  0x0001047c    0x19c  iar_Stoulx.o [3]
+  .text              ro code  0x00010618     0xa0  em_wdog.o [1]
+  .text              ro code  0x000106b8      0x4  xTzoff_nop.o [3]
+  .text              ro code  0x000106bc    0x7d4  FileCommit.o [1]
+  .text              ro code  0x00010e90    0x3a8  DataFlash.o [1]
+  .rodata            const    0x00011238    0x558  ExtCommunication.o [1]
+  .text              ro code  0x00011790    0x294  SysTask.o [1]
+  .text              ro code  0x00011a24    0x144  heap0.o [3]
+  .text              ro code  0x00011b68     0x2c  xgetmemchunk.o [3]
+  .rodata            const    0x00011b94    0x100  cpu_core.o [1]
+  .text              ro code  0x00011c94     0xe0  xfspos.o [3]
+  .text              ro code  0x00011d74     0xb4  fflush.o [3]
+  .text              ro code  0x00011e28      0xc  xfgpos.o [3]
+  .text              ro code  0x00011e34     0x4a  lseek.o [6]
+  .text              ro code  0x00011e7e     0x10  write.o [6]
+  .text              ro code  0x00011e8e      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00011e90     0xc4  XShHandles.o [3]
+  .text              ro code  0x00011f54     0x1e  dwrite.o [6]
+  .text              ro code  0x00011f72     0x20  iarwstd.o [6]
+  .text              ro code  0x00011f92     0x22  iarwrite.o [6]
+  .text              ro code  0x00011fb4     0xc0  xfwprep.o [3]
+  .text              ro code  0x00012074     0x24  fseek.o [3]
+  .text              ro code  0x00012098     0x98  xfofind.o [3]
+  .text              ro code  0x00012130      0x8  heaptramp0.o [3]
+  .text              ro code  0x00012138     0x80  fclose.o [3]
+  .text              ro code  0x000121b8     0x18  close.o [6]
+  .text              ro code  0x000121d0     0x14  remove.o [6]
+  .text              ro code  0x000121e4     0x80  lz77_init_single.o [5]
+  .rodata            const    0x00012264     0x78  ExtCommunication.o [1]
+  .rodata            const    0x000122dc     0x78  ExtCommunication.o [1]
+  .rodata            const    0x00012354     0x68  ExtCommunication.o [1]
+  .text              ro code  0x000123bc     0x54  fputc.o [3]
+  .rodata            const    0x00012410     0x4c  ExtCommunication.o [1]
+  .rodata            const    0x0001245c     0x44  ExtCommunication.o [1]
+  .rodata            const    0x000124a0     0x44  os_core.o [1]
+  .rodata            const    0x000124e4     0x44  os_mutex.o [1]
+  .rodata            const    0x00012528     0x44  os_stat.o [1]
+  .rodata            const    0x0001256c     0x44  os_task.o [1]
+  .rodata            const    0x000125b0     0x44  os_tick.o [1]
+  .rodata            const    0x000125f4     0x44  os_time.o [1]
+  .rodata            const    0x00012638     0x40  os_mem.o [1]
+  .rodata            const    0x00012678     0x40  os_msg.o [1]
+  .rodata            const    0x000126b8     0x40  os_q.o [1]
+  .rodata            const    0x000126f8     0x40  os_tmr.o [1]
+  .rodata            const    0x00012738     0x3c  ExtCommunication.o [1]
+  .text              ro code  0x00012774     0x3c  zero_init3.o [5]
+  .text              ro code  0x000127b0     0x38  xcloseall.o [3]
+  .rodata            const    0x000127e8     0x34  em_cmu.o [1]
+  .rodata            const    0x0001281c     0x34  em_cmu.o [1]
+  .rodata            const    0x00012850     0x34  em_core.o [1]
+  .rodata            const    0x00012884     0x34  em_emu.o [1]
+  .rodata            const    0x000128b8     0x34  em_gpio.o [1]
+  .rodata            const    0x000128ec     0x34  em_gpio.o [1]
+  .rodata            const    0x00012920     0x34  em_ldma.o [1]
+  .rodata            const    0x00012954     0x34  em_leuart.o [1]
+  .rodata            const    0x00012988     0x34  em_rtcc.o [1]
+  .rodata            const    0x000129bc     0x34  em_usart.o [1]
+  .rodata            const    0x000129f0     0x34  rtcdriver.o [1]
+  .rodata            const    0x00012a24     0x34  rtcdriver.o [1]
+  .rodata            const    0x00012a58     0x34  SPI_Comm.o [1]
+  .rodata            const    0x00012a8c     0x34  spidrv.o [1]
+  .rodata            const    0x00012ac0     0x34  uartdrv.o [1]
+  .text              ro code  0x00012af4     0x30  ustimer.o [1]
+  .rodata            const    0x00012b24     0x28  CellularATCommands.o [1]
+  .rodata            const    0x00012b4c     0x28  em_cmu.o [1]
+  .rodata            const    0x00012b74     0x28  ExtCommunication.o [1]
+  .rodata            const    0x00012b9c     0x28  ExtCommunication.o [1]
+  .rodata            const    0x00012bc4     0x28  ExtCommunication.o [1]
+  .text              ro code  0x00012bec     0x28  data_init.o [5]
+  .rodata            const    0x00012c14     0x24  Cellular.o [1]
+  .rodata            const    0x00012c38     0x24  ExtCommunication.o [1]
+  .iar.init_table    const    0x00012c5c     0x20  - Linker created -
+  .rodata            const    0x00012c7c     0x20  CellularATCommands.o [1]
+  .rodata            const    0x00012c9c     0x20  CellularATCommands.o [1]
+  .rodata            const    0x00012cbc     0x20  ExtCommunication.o [1]
+  .rodata            const    0x00012cdc     0x20  ExtCommunication.o [1]
+  .text              ro code  0x00012cfc     0x1e  cmain.o [5]
+  .text              ro code  0x00012d1a      0x4  low_level_init.o [3]
+  .text              ro code  0x00012d1e      0x8  exit.o [3]
+  .text              ro code  0x00012d26      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00012d28      0xe  cexit.o [5]
+  .text              ro code  0x00012d36      0x2  startup_efm32tg11b.o [1]
+  .rodata            const    0x00012d38     0x1c  DataFlash.o [1]
+  .rodata            const    0x00012d54     0x1c  ExtCommunication.o [1]
+  .rodata            const    0x00012d70     0x1c  SPI_Comm.o [1]
+  .rodata            const    0x00012d8c     0x1c  uartdrv.o [1]
+  .text              ro code  0x00012da8     0x1c  xsnprout.o [3]
+  .rodata            const    0x00012dc4     0x18  CellularATCommands.o [1]
+  .rodata            const    0x00012ddc     0x18  CellularATCommands.o [1]
+  .rodata            const    0x00012df4     0x18  CellularATCommands.o [1]
+  .rodata            const    0x00012e0c     0x18  CellularATCommands.o [1]
+  .rodata            const    0x00012e24     0x18  CellularATCommands.o [1]
+  .rodata            const    0x00012e3c     0x18  ExtCommunication.o [1]
+  .rodata            const    0x00012e54     0x18  os_tick.o [1]
+  .rodata            const    0x00012e6c     0x18  spidrv.o [1]
+  .text              ro code  0x00012e84     0x16  xprout.o [3]
+  .text              ro code  0x00012e9a      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00012e9c     0x10  putchar.o [3]
+  .rodata            const    0x00012eac     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012ec0     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012ed4     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012ee8     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012efc     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012f10     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012f24     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012f38     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012f4c     0x14  CellularATCommands.o [1]
+  .rodata            const    0x00012f60     0x14  ExtCommunication.o [1]
+  .rodata            const    0x00012f74     0x14  ExtCommunication.o [1]
+  .rodata            const    0x00012f88     0x14  os_core.o [1]
+  .rodata            const    0x00012f9c     0x14  os_stat.o [1]
+  .rodata            const    0x00012fb0     0x14  os_tick.o [1]
+  .rodata            const    0x00012fc4     0x14  os_tmr.o [1]
+  .rodata            const    0x00012fd8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00012fe8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00012ff8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013008     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013018     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013028     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013038     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013048     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013058     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013068     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013078     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013088     0x10  CellularATCommands.o [1]
+  .rodata            const    0x00013098     0x10  CellularATCommands.o [1]
+  .rodata            const    0x000130a8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x000130b8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x000130c8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x000130d8     0x10  CellularATCommands.o [1]
+  .rodata            const    0x000130e8     0x10  dmadrv.o [1]
+  .rodata            const    0x000130f8     0x10  dmadrv.o [1]
+  .rodata            const    0x00013108     0x10  ExtCommunication.o [1]
+  .rodata            const    0x00013118     0x10  FileCommit.o [1]
+  .rodata            const    0x00013128     0x10  FileCommit.o [1]
+  .rodata            const    0x00013138     0x10  main.o [1]
+  .rodata            const    0x00013148     0x10  main.o [1]
+  .rodata            const    0x00013158     0x10  main.o [1]
+  .rodata            const    0x00013168     0x10  os_core.o [1]
+  .rodata            const    0x00013178     0x10  os_msg.o [1]
+  .rodata            const    0x00013188     0x10  os_mutex.o [1]
+  .rodata            const    0x00013198     0x10  os_stat.o [1]
+  .rodata            const    0x000131a8     0x10  os_task.o [1]
+  .rodata            const    0x000131b8     0x10  os_task.o [1]
+  .rodata            const    0x000131c8     0x10  os_task.o [1]
+  .rodata            const    0x000131d8     0x10  os_tick.o [1]
+  .rodata            const    0x000131e8     0x10  os_tmr.o [1]
+  .rodata            const    0x000131f8     0x10  xprintffull_nomb.o [3]
+  .text              ro code  0x00013208     0x10  startup_efm32tg11b.o [1]
+  .rodata            const    0x00013218      0xc  Cellular.o [1]
+  .rodata            const    0x00013224      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013230      0xc  CellularATCommands.o [1]
+  .rodata            const    0x0001323c      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013248      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013254      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013260      0xc  CellularATCommands.o [1]
+  .rodata            const    0x0001326c      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013278      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013284      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013290      0xc  CellularATCommands.o [1]
+  .rodata            const    0x0001329c      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132a8      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132b4      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132c0      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132cc      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132d8      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132e4      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132f0      0xc  CellularATCommands.o [1]
+  .rodata            const    0x000132fc      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013308      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013314      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013320      0xc  CellularATCommands.o [1]
+  .rodata            const    0x0001332c      0xc  CellularATCommands.o [1]
+  .rodata            const    0x00013338      0xc  ExtCommunication.o [1]
+  .rodata            const    0x00013344      0xc  ExtCommunication.o [1]
+  .rodata            const    0x00013350      0xc  ExtCommunication.o [1]
+  .rodata            const    0x0001335c      0xc  ExtCommunication.o [1]
+  .rodata            const    0x00013368      0xc  FileCommit.o [1]
+  .rodata            const    0x00013374      0xc  FileCommit.o [1]
+  .rodata            const    0x00013380      0xc  FileCommit.o [1]
+  .rodata            const    0x0001338c      0xc  FileCommit.o [1]
+  .rodata            const    0x00013398      0xc  FileCommit.o [1]
+  .rodata            const    0x000133a4      0xc  main.o [1]
+  .rodata            const    0x000133b0      0xc  main.o [1]
+  .rodata            const    0x000133bc      0xc  os_core.o [1]
+  .rodata            const    0x000133c8      0xc  os_mem.o [1]
+  .rodata            const    0x000133d4      0xc  os_msg.o [1]
+  .rodata            const    0x000133e0      0xc  os_msg.o [1]
+  .rodata            const    0x000133ec      0xc  os_mutex.o [1]
+  .rodata            const    0x000133f8      0xc  os_mutex.o [1]
+  .rodata            const    0x00013404      0xc  os_q.o [1]
+  .rodata            const    0x00013410      0xc  os_stat.o [1]
+  .rodata            const    0x0001341c      0xc  os_task.o [1]
+  .rodata            const    0x00013428      0xc  os_task.o [1]
+  .rodata            const    0x00013434      0xc  os_task.o [1]
+  .rodata            const    0x00013440      0xc  os_time.o [1]
+  .rodata            const    0x0001344c      0xc  os_tmr.o [1]
+  .rodata            const    0x00013458      0xc  SysTask.o [1]
+  .text              ro code  0x00013464      0xc  cstartup_M.o [5]
+  .rodata            const    0x00013470      0x8  CellularATCommands.o [1]
+  .rodata            const    0x00013478      0x8  CellularATCommands.o [1]
+  .rodata            const    0x00013480      0x8  CellularATCommands.o [1]
+  .rodata            const    0x00013488      0x8  CellularATCommands.o [1]
+  .rodata            const    0x00013490      0x8  CellularATCommands.o [1]
+  .rodata            const    0x00013498      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134a0      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134a8      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134b0      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134b8      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134c0      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134c8      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134d0      0x8  CellularATCommands.o [1]
+  .rodata            const    0x000134d8      0x8  ExtCommunication.o [1]
+  .rodata            const    0x000134e0      0x8  ExtCommunication.o [1]
+  .rodata            const    0x000134e8      0x8  FileCommit.o [1]
+  .rodata            const    0x000134f0      0x8  FileCommit.o [1]
+  .rodata            const    0x000134f8      0x8  FileCommit.o [1]
+  .rodata            const    0x00013500      0x8  os_core.o [1]
+  .rodata            const    0x00013508      0x8  os_q.o [1]
+  .rodata            const    0x00013510      0x8  os_q.o [1]
+  .rodata            const    0x00013518      0x6  xlocale_c.o [3]
+  .text              ro code  0x0001351e      0x2  startup_efm32tg11b.o [1]
+  .rodata            const    0x00013520      0x4  CellularATCommands.o [1]
+  .rodata            const    0x00013524      0x4  dmadrv.o [1]
+  .rodata            const    0x00013528      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001352c      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013530      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013534      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013538      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001353c      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013540      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013544      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013548      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001354c      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013550      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013554      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013558      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001355c      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013560      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013564      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013568      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001356c      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013570      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013574      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013578      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001357c      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013580      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013584      0x4  os_cfg_app.o [1]
+  .rodata            const    0x00013588      0x4  os_cfg_app.o [1]
+  .rodata            const    0x0001358c      0x4  os_cfg_app.o [1]
+  .text              ro code  0x00013590      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00013592      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00013594      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00013596      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x00013598      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0001359a      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0001359c      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x0001359e      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135a0      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135a2      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135a4      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135a6      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135a8      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135aa      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135ac      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135ae      0x2  startup_efm32tg11b.o [1]
+  .text              ro code  0x000135b0      0x2  startup_efm32tg11b.o [1]
+  .rodata            const    0x000135b2      0x1  os_cfg_app.o [1]
+  .rodata            const    0x000135b3      0x1  os_cfg_app.o [1]
+  .rodata            const    0x000135b4      0x1  os_cfg_app.o [1]
+  .text              ro code  0x000135b8      0x0  cstart_closeall.o [5]
+  .rodata            const    0x000135b8      0x0  zero_init3.o [5]
+  .rodata            const    0x000135b8      0x0  lz77_init_single.o [5]
+  Initializer bytes  const    0x000135b8    0x23a  <for P2-1>
+                            - 0x000137f2  0x13732
+
+"P2", part 1 of 3:                          0x6f1
+  P2-1                        0x20000000    0x6f1  <Init block>
+    .data            inited   0x20000000      0x4  Cellular.o [1]
+    .data            inited   0x20000004     0x80  Cellular.o [1]
+    .data            inited   0x20000084     0x80  Cellular.o [1]
+    .data            inited   0x20000104    0x410  CellularATCommands.o [1]
+    .data            inited   0x20000514      0x4  DataFlash.o [1]
+    .data            inited   0x20000518      0x4  em_cmu.o [1]
+    .data            inited   0x2000051c     0x18  ExtCommunication.o [1]
+    .data            inited   0x20000534      0xc  main.o [1]
+    .data            inited   0x20000540      0xc  rtcdriver.o [1]
+    .data            inited   0x2000054c      0x8  rtcdriver.o [1]
+    .data            inited   0x20000554      0x4  SPI_Comm.o [1]
+    .data            inited   0x20000558      0x4  system_efm32tg11b.o [1]
+    .data            inited   0x2000055c      0x4  system_efm32tg11b.o [1]
+    .data            inited   0x20000560      0x4  system_efm32tg11b.o [1]
+    .data            inited   0x20000564      0x4  system_efm32tg11b.o [1]
+    .data            inited   0x20000568     0x38  xlocale_c.o [3]
+    .data            inited   0x200005a0     0x48  xlocale_c.o [3]
+    .data            inited   0x200005e8     0x48  xfiles.o [3]
+    .data            inited   0x20000630     0x48  xfiles.o [3]
+    .data            inited   0x20000678     0x48  xfiles.o [3]
+    .data            inited   0x200006c0     0x20  xfiles.o [3]
+    .data            inited   0x200006e0      0x8  XShttio.o [3]
+    .data            inited   0x200006e8      0x2  SysTask.o [1]
+    .data            inited   0x200006ea      0x2  SysTask.o [1]
+    .data            inited   0x200006ec      0x1  main.o [1]
+    .data            inited   0x200006ed      0x1  main.o [1]
+    .data            inited   0x200006ee      0x1  SPI_Comm.o [1]
+    .data            inited   0x200006ef      0x1  SPI_Comm.o [1]
+    .data            inited   0x200006f0      0x1  Timer.o [1]
+                            - 0x200006f1    0x6f1
+
+"P2", part 2 of 3:                         0x4fe4
+  .bss               zero     0x200006f4   0x1000  main.o [1]
+  .bss               zero     0x200016f4    0x800  main.o [1]
+  .bss               zero     0x20001ef4    0x780  main.o [1]
+  .bss               zero     0x20002674    0x5dc  Cellular.o [1]
+  .bss               zero     0x20002c50    0x400  Cellular.o [1]
+  .bss               zero     0x20003050    0x400  os_cfg_app.o [1]
+  .bss               zero     0x20003450    0x400  os_cfg_app.o [1]
+  .bss               zero     0x20003850    0x400  os_cfg_app.o [1]
+  .bss               zero     0x20003c50    0x320  os_cfg_app.o [1]
+  .bss               zero     0x20003f70    0x200  os_cfg_app.o [1]
+  .bss               zero     0x20004170    0x200  os_cfg_app.o [1]
+  .bss               zero     0x20004370    0x200  os_var.o [1]
+  .bss               zero     0x20004570    0x12c  Cellular.o [1]
+  .bss               zero     0x2000469c    0x108  DataFlash.o [1]
+  .bss               zero     0x200047a4    0x108  DataFlash.o [1]
+  .bss               zero     0x200048ac    0x100  dmadrv.o [1]
+  .bss               zero     0x200049ac     0xf0  main.o [1]
+  .bss               zero     0x20004aa0     0xa0  rtcdriver.o [1]
+  .bss               zero     0x20004b40     0xa0  SPI_Comm.o [1]
+  .bss               zero     0x20004be0     0x94  main.o [1]
+  .bss               zero     0x20004c74     0x94  main.o [1]
+  .bss               zero     0x20004d08     0x94  os_var.o [1]
+  .bss               zero     0x20004d9c     0x94  os_var.o [1]
+  .bss               zero     0x20004e30     0x94  os_var.o [1]
+  .bss               zero     0x20004ec4     0x94  os_var.o [1]
+  .bss               zero     0x20004f58     0x80  Cellular.o [1]
+  .bss               zero     0x20004fd8     0x80  dmadrv.o [1]
+  .bss               zero     0x20005058     0x80  XShHandles.o [3]
+  .bss               zero     0x200050d8     0x7c  SysTask.o [1]
+  .bss               zero     0x20005154     0x64  SysTask.o [1]
+  .bss               zero     0x200051b8     0x78  Event.o [1]
+  .bss               zero     0x20005230     0x60  SPI_Comm.o [1]
+  .bss               zero     0x20005290     0x60  SPI_Comm.o [1]
+  .bss               zero     0x200052f0     0x58  DataFlash.o [1]
+  .bss               zero     0x20005348     0x58  SPI_Comm.o [1]
+  .bss               zero     0x200053a0     0x50  xfiles.o [3]
+  .bss               zero     0x200053f0     0x50  xfiles.o [3]
+  .bss               zero     0x20005440     0x40  gpiointerrupt.o [1]
+  .bss               zero     0x20005480     0x3c  Cellular.o [1]
+  .bss               zero     0x200054bc     0x34  Cellular.o [1]
+  .bss               zero     0x200054f0     0x2c  xttotm.o [3]
+  .bss               zero     0x2000551c     0x24  Cellular.o [1]
+  .bss               zero     0x20005540     0x1c  ExtCommunication.o [1]
+  .bss               zero     0x2000555c     0x1c  os_var.o [1]
+  .bss               zero     0x20005578     0x18  Event.o [1]
+  .bss               zero     0x20005590     0x18  main.o [1]
+  .bss               zero     0x200055a8     0x18  main.o [1]
+  .bss               zero     0x200055c0     0x18  main.o [1]
+  .bss               zero     0x200055d8     0x10  SPI_Comm.o [1]
+  .bss               zero     0x200055e8     0x10  SPI_Comm.o [1]
+  .bss               zero     0x200055f8     0x10  SysTask.o [1]
+  .bss               zero     0x20005608      0x8  os_prio.o [1]
+  .bss               zero     0x20005610      0x8  os_var.o [1]
+  .bss               zero     0x20005618      0x8  heap0.o [3]
+  .bss               zero     0x20005620      0x4  armv6m_os_cpu_c.o [1]
+  .bss               zero     0x20005624      0x4  Cellular.o [1]
+  .bss               zero     0x20005628      0x4  Cellular.o [1]
+  .bss               zero     0x2000562c      0x4  main.o [1]
+  .bss               zero     0x20005630      0x4  os_var.o [1]
+  .bss               zero     0x20005634      0x4  os_var.o [1]
+  .bss               zero     0x20005638      0x4  os_var.o [1]
+  .bss               zero     0x2000563c      0x4  os_var.o [1]
+  .bss               zero     0x20005640      0x4  os_var.o [1]
+  .bss               zero     0x20005644      0x4  os_var.o [1]
+  .bss               zero     0x20005648      0x4  os_var.o [1]
+  .bss               zero     0x2000564c      0x4  os_var.o [1]
+  .bss               zero     0x20005650      0x4  os_var.o [1]
+  .bss               zero     0x20005654      0x4  os_var.o [1]
+  .bss               zero     0x20005658      0x4  os_var.o [1]
+  .bss               zero     0x2000565c      0x4  os_var.o [1]
+  .bss               zero     0x20005660      0x4  os_var.o [1]
+  .bss               zero     0x20005664      0x4  os_var.o [1]
+  .bss               zero     0x20005668      0x4  os_var.o [1]
+  .bss               zero     0x2000566c      0x4  os_var.o [1]
+  .bss               zero     0x20005670      0x4  os_var.o [1]
+  .bss               zero     0x20005674      0x4  os_var.o [1]
+  .bss               zero     0x20005678      0x4  os_var.o [1]
+  .bss               zero     0x2000567c      0x4  os_var.o [1]
+  .bss               zero     0x20005680      0x4  os_var.o [1]
+  .bss               zero     0x20005684      0x4  os_var.o [1]
+  .bss               zero     0x20005688      0x4  os_var.o [1]
+  .bss               zero     0x2000568c      0x4  rtcdriver.o [1]
+  .bss               zero     0x20005690      0x4  rtcdriver.o [1]
+  .bss               zero     0x20005694      0x4  rtcdriver.o [1]
+  .bss               zero     0x20005698      0x4  rtcdriver.o [1]
+  .bss               zero     0x2000569c      0x4  SPI_Comm.o [1]
+  .bss               zero     0x200056a0      0x4  SPI_Comm.o [1]
+  .bss               zero     0x200056a4      0x4  SPI_Comm.o [1]
+  .bss               zero     0x200056a8      0x4  SPI_Comm.o [1]
+  .bss               zero     0x200056ac      0x4  Timer.o [1]
+  .bss               zero     0x200056b0      0x4  xfail_s.o [3]
+  .bss               zero     0x200056b4      0x4  xgetmemchunk.o [3]
+  .bss               zero     0x200056b8      0x2  os_var.o [1]
+  .bss               zero     0x200056ba      0x2  os_var.o [1]
+  .bss               zero     0x200056bc      0x2  os_var.o [1]
+  .bss               zero     0x200056be      0x1  Cellular.o [1]
+  .bss               zero     0x200056bf      0x1  Cellular.o [1]
+  .bss               zero     0x200056c0      0x1  dmadrv.o [1]
+  .bss               zero     0x200056c1      0x1  em_emu.o [1]
+  .bss               zero     0x200056c2      0x1  ExtCommunication.o [1]
+  .bss               zero     0x200056c3      0x1  os_var.o [1]
+  .bss               zero     0x200056c4      0x1  os_var.o [1]
+  .bss               zero     0x200056c5      0x1  os_var.o [1]
+  .bss               zero     0x200056c6      0x1  os_var.o [1]
+  .bss               zero     0x200056c7      0x1  os_var.o [1]
+  .bss               zero     0x200056c8      0x1  os_var.o [1]
+  .bss               zero     0x200056c9      0x1  os_var.o [1]
+  .bss               zero     0x200056ca      0x1  os_var.o [1]
+  .bss               zero     0x200056cb      0x1  os_var.o [1]
+  .bss               zero     0x200056cc      0x1  os_var.o [1]
+  .bss               zero     0x200056cd      0x1  rtcdriver.o [1]
+  .bss               zero     0x200056ce      0x1  rtcdriver.o [1]
+  .bss               zero     0x200056cf      0x1  rtcdriver.o [1]
+  .bss               zero     0x200056d0      0x1  SPI_Comm.o [1]
+  .bss               zero     0x200056d1      0x1  SPI_Comm.o [1]
+  .bss               zero     0x200056d2      0x1  SPI_Comm.o [1]
+  .bss               zero     0x200056d3      0x1  spidrv.o [1]
+  .bss               zero     0x200056d4      0x1  SysTask.o [1]
+  .bss               zero     0x200056d5      0x1  ustimer.o [1]
+                            - 0x200056d6   0x4fe2
+
+"P2", part 3 of 3:                          0xc00
+  CSTACK                      0x200056d8    0x400  <Block>
+    CSTACK           uninit   0x200056d8    0x400  <Block tail>
+  HEAP                        0x20005ad8    0x800  <Block>
+    HEAP             uninit   0x20005ad8    0x800  <Block tail>
+                            - 0x200062d8    0xc00
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4fe2:
+          0x200006f4  0x4fe2
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x23a (32% of destination):
+          0x000135b8   0x23a
+    1 destination range, total size 0x6f1:
+          0x20000000   0x6f1
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+D:\ISC\Frey\Frey Firmware\Src\Debug\Obj: [1]
+    Cellular.o              2 420      131    3 370
+    CellularATCommands.o    1 880    1 393    1 040
+    DataFlash.o               936       30      620
+    Event.o                   184               144
+    ExtCommunication.o      1 276    2 316       53
+    FileCommit.o            2 004      116
+    SPI_Comm.o              6 720       81      497
+    SysTask.o                 660       13      245
+    Timer.o                   376        1        5
+    armv6m_cpu_a.o             30
+    armv6m_os_cpu_a.o         172
+    armv6m_os_cpu_c.o         384                 4
+    bsp_cpu.o                  12
+    cpu_core.o                 84      256
+    dmadrv.o                1 392       36      385
+    em_assert.o                 4
+    em_cmu.o                3 796      145        4
+    em_core.o                 298       52
+    em_emu.o                  288       52        1
+    em_gpio.o               1 240      104
+    em_ldma.o                 916       52
+    em_leuart.o               120       52
+    em_rtcc.o                 216       52
+    em_usart.o                924       52
+    em_wdog.o                 160
+    gpiointerrupt.o           256                64
+    jsmn.o                  1 204
+    main.o                    732       77    8 690
+    os_cfg_app.o              184      109    4 896
+    os_core.o               2 328      124
+    os_mem.o                   28       76
+    os_msg.o                  460      104
+    os_mutex.o              1 446      108
+    os_prio.o                 168                 8
+    os_q.o                  1 144       92
+    os_stat.o                 724      116
+    os_task.o               2 840      152
+    os_tick.o               1 148      128
+    os_time.o                 392       80
+    os_tmr.o                  576      112
+    os_var.o                                  1 248
+    rtcdriver.o             2 148      110      199
+    spidrv.o                4 900       76        1
+    startup_efm32tg11b.o      268
+    system_efm32tg11b.o       156        5       16
+    uartdrv.o               4 160       80
+    ustimer.o                  48                 1
+    -----------------------------------------------
+    Total:                 51 802    6 483   21 491
+
+command line: [2]
+    -----------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    XShHandles.o              196               128
+    XShttio.o                   8        3        8
+    abort.o                    10
+    exit.o                      8
+    fclose.o                  128
+    fflush.o                  180
+    fputc.o                    84
+    fseek.o                    36
+    gmtime.o                   14
+    heap0.o                   324                 8
+    heaptramp0.o                8
+    iar_Stoflt.o              492
+    iar_Stollx.o              168
+    iar_Stolx.o               140
+    iar_Stopfx.o              280
+    iar_Stoullx.o             472
+    iar_Stoulx.o              412
+    iar_Stoxflt.o             576
+    isalpha.o                  18
+    isspace.o                  18
+    low_level_init.o            4
+    mktime.o                  248
+    printf.o                   40
+    putchar.o                  16
+    snprintf.o                 76
+    sprintf.o                  64
+    sscanf.o                   40
+    strncmp.o                  44
+    strstr.o                   50
+    tolower.o                  18
+    xDaysTo.o                 108
+    xTzoff_nop.o                4
+    xcloseall.o                56
+    xfail_s.o                  72                 4
+    xfgpos.o                   12
+    xfiles.o                            80      408
+    xfofind.o                 152
+    xfspos.o                  224
+    xfwprep.o                 192
+    xgetmemchunk.o             44                 4
+    xisdst_nop.o                6
+    xlocale_c.o                76       47      128
+    xprintffull_nomb.o      3 706       16
+    xprout.o                   22
+    xscanffull_nomb.o       3 568
+    xsnprout.o                 28
+    xsprout.o                  10
+    xsscin.o                   34
+    xttotm.o                  280                44
+    -----------------------------------------------
+    Total:                 12 766      146      732
+
+m6M_tl.a: [4]
+    DblAddSub.o               436
+    DblCmpEq.o                 36
+    DblCmpGe.o                 50
+    DblCmpLe.o                 50
+    DblDiv.o                  194
+    DblMul.o                  388
+    DblToFlt.o                 98
+    DblToI32.o                 82
+    FltAddSub.o               288
+    FltDiv.o                  170
+    FltMul.o                  176
+    FltToDbl.o                 50
+    FltToS32.o                 58
+    IxxToDbl.o                 52
+    IxxToFlt.o                 54
+    iar_Exp64.o               956
+    pow64.o                 2 936
+    strto64.o               1 078
+    -----------------------------------------------
+    Total:                  7 152
+
+rt6M_tl.a: [5]
+    ABImemcpy.o                92
+    ABImemset.o                88
+    I32DivModFast.o           224
+    I64DivMod.o               106
+    I64DivZer.o                 2
+    I64Mul.o                   50
+    IntDivZer.o                 2
+    cexit.o                    14
+    cmain.o                    30
+    cstart_closeall.o
+    cstartup_M.o               12
+    data_init.o                40
+    lz77_init_single.o        128
+    memchr.o                   24
+    strchr.o                   24
+    strcmp.o                  152
+    strlen.o                   16
+    strncpy.o                  36
+    zero_init3.o               60
+    -----------------------------------------------
+    Total:                  1 100
+
+shb_l.a: [6]
+    close.o                    24
+    dwrite.o                   30
+    exit.o                     20
+    iarttio.o                 124
+    iarwrite.o                 34
+    iarwstd.o                  32
+    lseek.o                    74
+    remove.o                   20
+    write.o                    16
+    -----------------------------------------------
+    Total:                    374
+
+    Gaps                        3                 4
+    Linker created                      32    3 072
+---------------------------------------------------
+    Grand Total:           73 197    6 661   25 299
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x00012c5c           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00012c7c           --   Gb  - Linker created -
+?main                   0x00012cfd          Code  Gb  cmain.o [5]
+Aldata                  0x20005618     0x8  Data  Lc  heap0.o [3]
+BUS_RegBitRead          0x00005415     0xc  Code  Lc  em_cmu.o [1]
+BUS_RegBitRead          0x000098f5     0xc  Code  Lc  em_emu.o [1]
+BUS_RegBitRead          0x000000c1     0xc  Code  Lc  SPI_Comm.o [1]
+BUS_RegBitRead          0x00001fdd     0xc  Code  Lc  spidrv.o [1]
+BUS_RegBitWrite         0x000053f9    0x1c  Code  Lc  em_cmu.o [1]
+BUS_RegBitWrite         0x00001b05    0x1c  Code  Lc  em_gpio.o [1]
+BUS_RegMaskedClear      0x00001b2b     0xa  Code  Lc  em_gpio.o [1]
+BUS_RegMaskedClear      0x00009acd     0xa  Code  Lc  em_ldma.o [1]
+BUS_RegMaskedSet        0x00001b21     0xa  Code  Lc  em_gpio.o [1]
+BUS_RegMaskedWrite      0x00001b35    0x1a  Code  Lc  em_gpio.o [1]
+BlockingComplete        0x000024b1     0xe  Code  Lc  spidrv.o [1]
+BuildCustomINETMessage  0x00001263    0xb2  Code  Lc  SPI_Comm.o [1]
+BuildDataStatusMessage  0x00000c51   0x168  Code  Lc  SPI_Comm.o [1]
+BuildFirmwareAckNackMessage
+                        0x000019c1   0x126  Code  Lc  SPI_Comm.o [1]
+BuildNoRemainingMesage  0x00001221    0x42  Code  Lc  SPI_Comm.o [1]
+BuildQuickStatusMessage
+                        0x00000dd5   0x14c  Code  Lc  SPI_Comm.o [1]
+BuildRadioConfigureMessage
+                        0x00000f39   0x2e2  Code  Lc  SPI_Comm.o [1]
+CMU_ClockEnable         0x00005789    0x88  Code  Gb  em_cmu.o [1]
+CMU_ClockFreqGet        0x00005813   0x1c4  Code  Gb  em_cmu.o [1]
+CMU_ClockSelectGet      0x00005a25   0x120  Code  Gb  em_cmu.o [1]
+CMU_ClockSelectSet      0x00005b61   0x25a  Code  Gb  em_cmu.o [1]
+CMU_DivToLog2           0x000035c7    0x22  Code  Lc  rtcdriver.o [1]
+CMU_HFRCOBandGet        0x00005e8d     0x6  Code  Gb  em_cmu.o [1]
+CMU_HFRCOBandSet        0x00005e95   0x10a  Code  Gb  em_cmu.o [1]
+CMU_HFRCODevinfoGet     0x00005e09    0x84  Code  Lc  em_cmu.o [1]
+CMU_Log2ToDiv           0x00005421    0x16  Code  Lc  em_cmu.o [1]
+CMU_OscillatorEnable    0x0000601d   0x126  Code  Gb  em_cmu.o [1]
+CMU_OscillatorTuningGet
+                        0x00006143    0x42  Code  Gb  em_cmu.o [1]
+CMU_OscillatorTuningSet
+                        0x00006189    0xaa  Code  Gb  em_cmu.o [1]
+CMU_OscillatorTuningWait
+                        0x00006235    0x4a  Code  Gb  em_cmu.o [1]
+CMU_UpdateWaitStates    0x000055d9    0x32  Code  Gb  em_cmu.o [1]
+CORE_EnterAtomic        0x00006669     0x8  Code  Wk  em_core.o [1]
+CORE_ExitAtomic         0x00006671     0xa  Code  Wk  em_core.o [1]
+CORE_IrqIsBlocked       0x00006c0d    0x74  Code  Wk  em_core.o [1]
+CORE_NvicIRQDisabled    0x00009df9    0x3e  Code  Gb  em_core.o [1]
+CPINCmpFun              0x0000f8ab    0x20  Code  Lc  CellularATCommands.o [1]
+CPU_CntLeadZeros        0x000083a1     0xc  Code  Gb  cpu_core.o [1]
+CPU_CntLeadZeros32      0x000083ad    0x3e  Code  Gb  cpu_core.o [1]
+CPU_CntLeadZerosTbl     0x00011b94   0x100  Data  Lc  cpu_core.o [1]
+CPU_IntDis              0x000083f1          Code  Gb  armv6m_cpu_a.o [1]
+CPU_IntEn               0x000083f5          Code  Gb  armv6m_cpu_a.o [1]
+CPU_SR_Restore          0x00008401          Code  Gb  armv6m_cpu_a.o [1]
+CPU_SR_Save             0x000083f9          Code  Gb  armv6m_cpu_a.o [1]
+CPU_SW_Exception        0x0000839d     0x4  Code  Gb  cpu_core.o [1]
+CPU_TS_TmrRd            0x00008ef5     0x6  Code  Gb  bsp_cpu.o [1]
+CPU_WaitForExcept       0x0000840b          Code  Gb  armv6m_cpu_a.o [1]
+CPU_WaitForInt          0x00008407          Code  Gb  armv6m_cpu_a.o [1]
+CREGQouteCmpFun         0x0000f995    0x56  Code  Lc  CellularATCommands.o [1]
+CSTACK$$Base            0x200056d8           --   Gb  - Linker created -
+CSTACK$$Limit           0x20005ad8           --   Gb  - Linker created -
+CSgpioCallback          0x000001a9    0x5a  Code  Lc  SPI_Comm.o [1]
+CalculateMessageChecksum
+                        0x00001341    0x20  Code  Lc  SPI_Comm.o [1]
+CellTaskStack           0x200006f4  0x1000  Data  Lc  main.o [1]
+CellTaskTCB             0x20004be0    0x94  Data  Gb  main.o [1]
+CelluarATCommands       0x20000104   0x410  Data  Gb  CellularATCommands.o [1]
+CellularATCMECheck      0x0000f0bd    0x28  Code  Lc  Cellular.o [1]
+CellularDeviceWrite     0x0000eec9   0x1b2  Code  Lc  Cellular.o [1]
+CellularInit            0x0000f5b5    0x6c  Code  Lc  Cellular.o [1]
+CellularModuleReset     0x0000ee77    0x52  Code  Lc  Cellular.o [1]
+CellularPowerUp         0x0000ee45    0x32  Code  Lc  Cellular.o [1]
+CellularTask            0x0000f63f    0x98  Code  Gb  Cellular.o [1]
+CellularUARTOpen        0x0000ed89    0x36  Code  Lc  Cellular.o [1]
+CellularUARTOpen::isUARTOpen
+                        0x200056bf     0x1  Data  Lc  Cellular.o [1]
+CellularUARTOpen::rxBufferQueue
+                        0x20000004    0x80  Data  Lc  Cellular.o [1]
+CellularUARTOpen::txBufferQueue
+                        0x20000084    0x80  Data  Lc  Cellular.o [1]
+CertWriteCmpFun         0x0000fb2f    0x20  Code  Lc  CellularATCommands.o [1]
+CheckParams             0x0000c6bd    0x22  Code  Lc  uartdrv.o [1]
+ClearRxBuffer           0x0000edbf    0x16  Code  Lc  Cellular.o [1]
+ClearWatchDogCounter    0x0001022f     0xa  Code  Gb  main.o [1]
+ConfigGPIO              0x000024c1   0xb78  Code  Lc  spidrv.o [1]
+ConfigGpio              0x0000cc75    0x44  Code  Lc  uartdrv.o [1]
+ConfigureCellularPins   0x0000edd5    0x70  Code  Lc  Cellular.o [1]
+ConfigureCertificate    0x0000f273    0x4e  Code  Lc  Cellular.o [1]
+CopyOfMasterRequest     0x200056a0     0x4  Data  Lc  SPI_Comm.o [1]
+CreateHttpHeader        0x000043cd    0x50  Code  Gb  ExtCommunication.o [1]
+CreateInstrumentEvent   0x00001361   0x30e  Code  Lc  SPI_Comm.o [1]
+CreateInstrumentEvent::eventsCreated
+                        0x200056a4     0x4  Data  Lc  SPI_Comm.o [1]
+CreateInstrumentEvent::isFirstMessage
+                        0x200006ef     0x1  Data  Lc  SPI_Comm.o [1]
+CreateUARTTXdata        0x0000fef5    0x94  Code  Gb  CellularATCommands.o [1]
+DMADRV_AllocateChannel  0x0000669d    0x64  Code  Gb  dmadrv.o [1]
+DMADRV_DeInit           0x00006701    0x4e  Code  Gb  dmadrv.o [1]
+DMADRV_FreeChannel      0x0000674f    0x4c  Code  Gb  dmadrv.o [1]
+DMADRV_Init             0x0000679b    0x58  Code  Gb  dmadrv.o [1]
+DMADRV_MemoryPeripheral
+                        0x000067f3    0x3a  Code  Gb  dmadrv.o [1]
+DMADRV_PeripheralMemory
+                        0x0000682d    0x3a  Code  Gb  dmadrv.o [1]
+DMADRV_StopTransfer     0x00006879    0x34  Code  Gb  dmadrv.o [1]
+DMADRV_TransferActive   0x000068ad    0x46  Code  Gb  dmadrv.o [1]
+DMADRV_TransferCompletePending
+                        0x000068fd    0x46  Code  Gb  dmadrv.o [1]
+DMADRV_TransferRemainingCount
+                        0x00006951    0x3c  Code  Gb  dmadrv.o [1]
+DataFlashDisablePowerSaving
+                        0x00011215    0x14  Code  Gb  DataFlash.o [1]
+DataFlashEnablePowerSaving
+                        0x000111fd    0x14  Code  Gb  DataFlash.o [1]
+DataFlashErasePage      0x00011083    0x60  Code  Gb  DataFlash.o [1]
+DataFlashEraseSector    0x000110e9    0x7a  Code  Gb  DataFlash.o [1]
+DataFlashInit           0x00010f75    0x48  Code  Gb  DataFlash.o [1]
+DataFlashReadPage       0x00011171    0x8c  Code  Gb  DataFlash.o [1]
+DataFlashReadTransactionStatus
+                        0x00010f4b    0x2a  Code  Lc  DataFlash.o [1]
+DataFlashSpiTransfer    0x00010ebb    0x2c  Code  Lc  DataFlash.o [1]
+DataFlashSpiWrite       0x00010ee7    0x28  Code  Lc  DataFlash.o [1]
+DataFlashTestCode       0x00011865    0x82  Code  Gb  SysTask.o [1]
+DataFlashWriteBuffer    0x00010fbd    0x70  Code  Gb  DataFlash.o [1]
+DataFlashWriteBufferToPage
+                        0x0001102d    0x56  Code  Gb  DataFlash.o [1]
+DequeueBuffer           0x0000c32d    0x48  Code  Lc  uartdrv.o [1]
+DirectLinkDownCmpFun    0x0000fd11    0x1e  Code  Lc  CellularATCommands.o [1]
+DisableReceiver         0x0000c3fd    0x42  Code  Lc  uartdrv.o [1]
+Dtentox                 0x0000e4bd   0x188  Code  Lc  strto64.o [4]
+EMU_EnterEM1            0x0000c2b1    0x10  Code  Lc  uartdrv.o [1]
+EMU_VScaleEM01          0x0000997f    0x7a  Code  Gb  em_emu.o [1]
+EMU_VScaleEM01ByClock   0x00009935    0x48  Code  Gb  em_emu.o [1]
+EMU_VScaleGet           0x00005447    0x12  Code  Lc  em_cmu.o [1]
+EMU_VScaleGet           0x00009911    0x12  Code  Lc  em_emu.o [1]
+EMU_VScaleWait          0x00005437    0x10  Code  Lc  em_cmu.o [1]
+EMU_VScaleWait          0x00009901    0x10  Code  Lc  em_emu.o [1]
+EnableReceiver          0x0000c3ab    0x52  Code  Lc  uartdrv.o [1]
+EnqueueBuffer           0x0000c2c1    0x6c  Code  Lc  uartdrv.o [1]
+FileCommitParseReceivedFwFilePacket
+                        0x000107e1   0x202  Code  Gb  FileCommit.o [1]
+FileCommitWriteFileToFlash
+                        0x000106bd   0x124  Code  Gb  FileCommit.o [1]
+GPIOINT_CallbackRegister
+                        0x00003415    0x20  Code  Gb  gpiointerrupt.o [1]
+GPIOINT_IRQDispatcher   0x00003435    0x30  Code  Lc  gpiointerrupt.o [1]
+GPIOINT_Init            0x000033f9    0x1c  Code  Gb  gpiointerrupt.o [1]
+GPIO_EVEN_IRQHandler    0x00003465    0x18  Code  Gb  gpiointerrupt.o [1]
+GPIO_ExtIntConfig       0x00001cd1   0x162  Code  Gb  em_gpio.o [1]
+GPIO_IntClear           0x000033d1     0x6  Code  Lc  gpiointerrupt.o [1]
+GPIO_IntConfig          0x0000017d    0x2a  Code  Lc  SPI_Comm.o [1]
+GPIO_IntGetEnabled      0x000033d7     0xc  Code  Lc  gpiointerrupt.o [1]
+GPIO_ODD_IRQHandler     0x0000347d    0x18  Code  Gb  gpiointerrupt.o [1]
+GPIO_PinInGet           0x000000cd    0xb0  Code  Lc  SPI_Comm.o [1]
+GPIO_PinInGet           0x00001fe9    0xb0  Code  Lc  spidrv.o [1]
+GPIO_PinModeSet         0x00001e45   0x15c  Code  Gb  em_gpio.o [1]
+GPIO_PinOutClear        0x00001b4f    0xb4  Code  Lc  em_gpio.o [1]
+GPIO_PinOutSet          0x00001c03    0xb2  Code  Lc  em_gpio.o [1]
+GPSParserCmpFun         0x0000fd35    0x38  Code  Lc  CellularATCommands.o [1]
+GPSReceivedCoordinates  0x20005578    0x18  Data  Gb  Event.o [1]
+GPSSetParserCmpFun      0x0000fd75    0x2c  Code  Lc  CellularATCommands.o [1]
+GetCurrentTimeAndDate   0x0000424d    0x34  Code  Gb  ExtCommunication.o [1]
+GetDeviceParamsFromFlash
+                        0x00010b8d   0x2e0  Code  Gb  FileCommit.o [1]
+GetEventMessageFromPool
+                        0x00003ef9    0x1e  Code  Gb  Event.o [1]
+GetNextSequence         0x00003f69     0x4  Code  Gb  Event.o [1]
+GetRTCTicks             0x0000f7d5     0x8  Code  Gb  Timer.o [1]
+GetTailBuffer           0x0000c375    0x36  Code  Lc  uartdrv.o [1]
+GetTaskMessageFromPool  0x00003eb5    0x1e  Code  Gb  Event.o [1]
+HEAP$$Base              0x20005ad8           --   Gb  - Linker created -
+HEAP$$Limit             0x200062d8           --   Gb  - Linker created -
+ICCIDCmpFun             0x0000f8ed    0x60  Code  Lc  CellularATCommands.o [1]
+IMEICmpFun              0x0000f8cb    0x22  Code  Lc  CellularATCommands.o [1]
+IdleTaskHookFunc        0x0001008d     0x2  Code  Lc  main.o [1]
+InitializeDma           0x0000ccf9    0x2e  Code  Lc  uartdrv.o [1]
+InitializeIntrumentData
+                        0x00000203    0x2c  Code  Gb  SPI_Comm.o [1]
+InitializeQueues        0x0000ccb9    0x40  Code  Lc  uartdrv.o [1]
+InputCmpFun             0x0000faf9    0x36  Code  Lc  CellularATCommands.o [1]
+InstrumentInfo          0x200051b8    0x78  Data  Gb  Event.o [1]
+IsMessageAvalibleForMasterDevice
+                        0x00000ad5    0x78  Code  Lc  SPI_Comm.o [1]
+JParseGetToken          0x0000429d    0xc8  Code  Lc  ExtCommunication.o [1]
+JParseInstrumentDataUpload
+                        0x00004377    0x3e  Code  Lc  ExtCommunication.o [1]
+JParseInstrumentRegister
+                        0x0000436d     0xa  Code  Lc  ExtCommunication.o [1]
+JSONCreateInstrumentDataUpload
+                        0x00003fa7   0x1dc  Code  Lc  ExtCommunication.o [1]
+JSONCreateInstrumentDataUpload::sequenceNumber
+                        0x200056c2     0x1  Data  Lc  ExtCommunication.o [1]
+JSONCreateInstrumentRegister
+                        0x00004183    0x1a  Code  Lc  ExtCommunication.o [1]
+JSONCreateTokenAccess   0x00003f6d    0x3a  Code  Lc  ExtCommunication.o [1]
+JSONGpsDataConversion   0x0000419d    0xa8  Code  Lc  ExtCommunication.o [1]
+LDMA_DeInit             0x00009ad7    0x1e  Code  Gb  em_ldma.o [1]
+LDMA_IRQHandler         0x0000698d    0x9a  Code  Gb  dmadrv.o [1]
+LDMA_Init               0x00009af5    0x84  Code  Gb  em_ldma.o [1]
+LDMA_StartTransfer      0x00009b7d   0x138  Code  Gb  em_ldma.o [1]
+LDMA_StopTransfer       0x00009cb5    0x36  Code  Gb  em_ldma.o [1]
+LDMA_TransferRemainingCount
+                        0x00009d11    0x5a  Code  Gb  em_ldma.o [1]
+LEUART_FreezeEnable     0x0000d2ed    0x1c  Code  Gb  em_leuart.o [1]
+LEUART_Reset            0x0000d309    0x4e  Code  Gb  em_leuart.o [1]
+LoadInt                 0x00009ffd    0x74  Code  Lc  xprintffull_nomb.o [3]
+ManageOutgoingMessage   0x00000b6d    0xca  Code  Gb  SPI_Comm.o [1]
+MasterRequest           0x2000569c     0x4  Data  Gb  SPI_Comm.o [1]
+MasterRequestedRadioParameter
+                        0x200006ee     0x1  Data  Lc  SPI_Comm.o [1]
+NVIC_ClearPendingIRQ    0x00009a31     0xe  Code  Lc  em_ldma.o [1]
+NVIC_ClearPendingIRQ    0x000033c3     0xe  Code  Lc  gpiointerrupt.o [1]
+NVIC_ClearPendingIRQ    0x000035b9     0xe  Code  Lc  rtcdriver.o [1]
+NVIC_DisableIRQ         0x00009a23     0xe  Code  Lc  em_ldma.o [1]
+NVIC_EnableIRQ          0x00009a15     0xe  Code  Lc  em_ldma.o [1]
+NVIC_EnableIRQ          0x000033b5     0xe  Code  Lc  gpiointerrupt.o [1]
+NVIC_EnableIRQ          0x000035ab     0xe  Code  Lc  rtcdriver.o [1]
+NVIC_GetPriority        0x00009da9    0x50  Code  Lc  em_core.o [1]
+NVIC_SetPriority        0x00009a3f    0x8e  Code  Lc  em_ldma.o [1]
+NVIC_SetPriority        0x0000ffcd    0x8e  Code  Lc  main.o [1]
+OKMsgCmpFun             0x0000f875    0x36  Code  Lc  CellularATCommands.o [1]
+OSCfg_DataSizeRAM       0x0001358c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStk            0x20003050   0x400  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStkBasePtr     0x00013538     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStkSize        0x0001353c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStkSizeRAM     0x00013540     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStk       0x20003f70   0x200  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkBasePtr
+                        0x00013528     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkLimit  0x0001352c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkSize   0x00013530     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkSizeRAM
+                        0x00013534     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_Init              0x0000bf75    0xb8  Code  Gb  os_cfg_app.o [1]
+OSCfg_MsgPool           0x20003c50   0x320  Data  Gb  os_cfg_app.o [1]
+OSCfg_MsgPoolBasePtr    0x00013544     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_MsgPoolSize       0x00007c72     0x2  Data  Gb  os_cfg_app.o [1]
+OSCfg_MsgPoolSizeRAM    0x00013548     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskPrio      0x000135b2     0x1  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskRate_Hz   0x0001354c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStk       0x20003450   0x400  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkBasePtr
+                        0x00013550     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkLimit  0x00013554     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkSize   0x00013558     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkSizeRAM
+                        0x0001355c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StkSizeMin        0x00013560     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickRate_Hz       0x00013564     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskPrio      0x000135b3     0x1  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStk       0x20003850   0x400  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkBasePtr
+                        0x00013568     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkLimit  0x0001356c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkSize   0x00013570     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkSizeRAM
+                        0x00013574     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskPrio       0x000135b4     0x1  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskRate_Hz    0x00013578     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStk        0x20004170   0x200  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkBasePtr
+                        0x0001357c     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkLimit   0x00013580     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkSize    0x00013584     0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkSizeRAM
+                        0x00013588     0x4  Data  Gb  os_cfg_app.o [1]
+OSCtxSw                 0x0000c051          Code  Gb  armv6m_os_cpu_a.o [1]
+OSIdleTaskHook          0x00008f01    0x12  Code  Gb  armv6m_os_cpu_c.o [1]
+OSIdleTaskTCB           0x20004d08    0x94  Data  Gb  os_var.o [1]
+OSInit                  0x000085dd   0x10a  Code  Gb  os_core.o [1]
+OSInitHook              0x00008f13    0x20  Code  Gb  armv6m_os_cpu_c.o [1]
+OSInitialized           0x200056c5     0x1  Data  Gb  os_var.o [1]
+OSIntCtxSw              0x0000c059          Code  Gb  armv6m_os_cpu_a.o [1]
+OSIntEnter              0x000086e7    0x1e  Code  Gb  os_core.o [1]
+OSIntExit               0x00008705    0x84  Code  Gb  os_core.o [1]
+OSIntNestingCtr         0x200056c3     0x1  Data  Gb  os_var.o [1]
+OSMsgPool               0x20005610     0x8  Data  Gb  os_var.o [1]
+OSMutexCreate           0x000092b1    0x7a  Code  Gb  os_mutex.o [1]
+OSMutexCreate::__func__
+                        0x00013188    0x10  Data  Lc  os_mutex.o [1]
+OSMutexPend             0x0000933d   0x27e  Code  Gb  os_mutex.o [1]
+OSMutexPend::__func__   0x000133ec     0xc  Data  Lc  os_mutex.o [1]
+OSMutexPost             0x000095d9   0x1ec  Code  Gb  os_mutex.o [1]
+OSMutexPost::__func__   0x000133f8     0xc  Data  Lc  os_mutex.o [1]
+OSPrioCur               0x200056c6     0x1  Data  Gb  os_var.o [1]
+OSPrioHighRdy           0x200056c7     0x1  Data  Gb  os_var.o [1]
+OSPrioTbl               0x20005608     0x8  Data  Gb  os_prio.o [1]
+OSQCreate               0x00004469    0x90  Code  Gb  os_q.o [1]
+OSQCreate::__func__     0x00013404     0xc  Data  Lc  os_q.o [1]
+OSQPend                 0x00004509   0x22e  Code  Gb  os_q.o [1]
+OSQPend::__func__       0x00013508     0x8  Data  Lc  os_q.o [1]
+OSQPost                 0x00004755   0x168  Code  Gb  os_q.o [1]
+OSQPost::__func__       0x00013510     0x8  Data  Lc  os_q.o [1]
+OSRdyList               0x20004370   0x200  Data  Gb  os_var.o [1]
+OSRunning               0x200056c4     0x1  Data  Gb  os_var.o [1]
+OSSched                 0x00008789    0x60  Code  Gb  os_core.o [1]
+OSSchedLock             0x00008825    0x86  Code  Gb  os_core.o [1]
+OSSchedLock::__func__   0x000133bc     0xc  Data  Lc  os_core.o [1]
+OSSchedLockNestingCtr   0x200056c8     0x1  Data  Gb  os_var.o [1]
+OSSchedRoundRobinDfltTimeQuanta
+                        0x2000564c     0x4  Data  Gb  os_var.o [1]
+OSSchedRoundRobinEn     0x200056c9     0x1  Data  Gb  os_var.o [1]
+OSSchedUnlock           0x000088c5    0xa8  Code  Gb  os_core.o [1]
+OSSchedUnlock::__func__
+                        0x00013168    0x10  Data  Lc  os_core.o [1]
+OSStart                 0x0000899d    0xa0  Code  Gb  os_core.o [1]
+OSStart::__func__       0x00013500     0x8  Data  Lc  os_core.o [1]
+OSStartHighRdy          0x0000c02d          Code  Gb  armv6m_os_cpu_a.o [1]
+OSStatReset             0x0000ba61    0x44  Code  Gb  os_stat.o [1]
+OSStatReset::__func__   0x00013410     0xc  Data  Lc  os_stat.o [1]
+OSStatResetFlag         0x200056ca     0x1  Data  Gb  os_var.o [1]
+OSStatTaskCPUUsage      0x200056b8     0x2  Data  Gb  os_var.o [1]
+OSStatTaskCPUUsageMax   0x200056ba     0x2  Data  Gb  os_var.o [1]
+OSStatTaskCtr           0x20005650     0x4  Data  Gb  os_var.o [1]
+OSStatTaskCtrMax        0x20005654     0x4  Data  Gb  os_var.o [1]
+OSStatTaskCtrRun        0x20005658     0x4  Data  Gb  os_var.o [1]
+OSStatTaskHook          0x00008f33    0x12  Code  Gb  armv6m_os_cpu_c.o [1]
+OSStatTaskRdy           0x200056cb     0x1  Data  Gb  os_var.o [1]
+OSStatTaskTCB           0x20004d9c    0x94  Data  Gb  os_var.o [1]
+OSStatTaskTimeMax       0x2000565c     0x4  Data  Gb  os_var.o [1]
+OSTCBCurPtr             0x20005684     0x4  Data  Gb  os_var.o [1]
+OSTCBHighRdyPtr         0x20005688     0x4  Data  Gb  os_var.o [1]
+OSTaskCreate            0x000048e1   0x228  Code  Gb  os_task.o [1]
+OSTaskCreate::__func__  0x000131a8    0x10  Data  Lc  os_task.o [1]
+OSTaskCreateHook        0x00008f45    0x16  Code  Gb  armv6m_os_cpu_c.o [1]
+OSTaskQPend             0x00004b25   0x1ca  Code  Gb  os_task.o [1]
+OSTaskQPend::__func__   0x0001341c     0xc  Data  Lc  os_task.o [1]
+OSTaskQPost             0x00004d21   0x136  Code  Gb  os_task.o [1]
+OSTaskQPost::__func__   0x00013428     0xc  Data  Lc  os_task.o [1]
+OSTaskQty               0x200056bc     0x2  Data  Gb  os_var.o [1]
+OSTaskRegNextAvailID    0x200056cc     0x1  Data  Gb  os_var.o [1]
+OSTaskReturnHook        0x00008f5b    0x16  Code  Gb  armv6m_os_cpu_c.o [1]
+OSTaskSemPend           0x00004e79   0x1b2  Code  Gb  os_task.o [1]
+OSTaskSemPend::__func__
+                        0x000131b8    0x10  Data  Lc  os_task.o [1]
+OSTaskSemPost           0x00005065   0x156  Code  Gb  os_task.o [1]
+OSTaskSemPost::__func__
+                        0x000131c8    0x10  Data  Lc  os_task.o [1]
+OSTaskStkInit           0x00008f71    0x78  Code  Gb  armv6m_os_cpu_c.o [1]
+OSTaskSwHook            0x00008fe9    0x12  Code  Gb  armv6m_os_cpu_c.o [1]
+OSTickCtr               0x20005660     0x4  Data  Gb  os_var.o [1]
+OSTickListDly           0x20005668     0x4  Data  Gb  os_var.o [1]
+OSTickListTimeout       0x2000566c     0x4  Data  Gb  os_var.o [1]
+OSTickTaskTCB           0x20004e30    0x94  Data  Gb  os_var.o [1]
+OSTickTaskTimeMax       0x20005664     0x4  Data  Gb  os_var.o [1]
+OSTimeDly               0x00009129   0x102  Code  Gb  os_time.o [1]
+OSTimeDly::__func__     0x00013440     0xc  Data  Lc  os_time.o [1]
+OSTimeTick              0x00009245    0x50  Code  Gb  os_time.o [1]
+OSTimeTickHook          0x00008ffb    0x12  Code  Gb  armv6m_os_cpu_c.o [1]
+OSTmrListPtr            0x20005670     0x4  Data  Gb  os_var.o [1]
+OSTmrMutex              0x2000555c    0x1c  Data  Gb  os_var.o [1]
+OSTmrTaskTCB            0x20004ec4    0x94  Data  Gb  os_var.o [1]
+OSTmrTaskTimeMax        0x20005674     0x4  Data  Gb  os_var.o [1]
+OSTmrTickCtr            0x20005678     0x4  Data  Gb  os_var.o [1]
+OSTmrUpdateCnt          0x2000567c     0x4  Data  Gb  os_var.o [1]
+OSTmrUpdateCtr          0x20005680     0x4  Data  Gb  os_var.o [1]
+OS_AppIdleTaskHookPtr   0x2000563c     0x4  Data  Gb  os_var.o [1]
+OS_AppStatTaskHookPtr   0x20005640     0x4  Data  Gb  os_var.o [1]
+OS_AppTaskCreateHookPtr
+                        0x20005630     0x4  Data  Gb  os_var.o [1]
+OS_AppTaskDelHookPtr    0x20005634     0x4  Data  Gb  os_var.o [1]
+OS_AppTaskReturnHookPtr
+                        0x20005638     0x4  Data  Gb  os_var.o [1]
+OS_AppTaskSwHookPtr     0x20005644     0x4  Data  Gb  os_var.o [1]
+OS_AppTimeTickHookPtr   0x20005648     0x4  Data  Gb  os_var.o [1]
+OS_CPU_ExceptStkBase    0x20005620     0x4  Data  Gb  armv6m_os_cpu_c.o [1]
+OS_IdleTask             0x00008a49    0x22  Code  Gb  os_core.o [1]
+OS_IdleTaskInit         0x00008a75    0x3e  Code  Gb  os_core.o [1]
+OS_MemInit              0x0000b5c9    0x14  Code  Gb  os_mem.o [1]
+OS_MemInit::__func__    0x000133c8     0xc  Data  Lc  os_mem.o [1]
+OS_MsgPoolInit          0x00008411    0x6e  Code  Gb  os_msg.o [1]
+OS_MsgPoolInit::__func__
+                        0x00013178    0x10  Data  Lc  os_msg.o [1]
+OS_MsgQGet              0x0000848f    0x86  Code  Gb  os_msg.o [1]
+OS_MsgQGet::__func__    0x000133d4     0xc  Data  Lc  os_msg.o [1]
+OS_MsgQInit             0x0000847f    0x10  Code  Gb  os_msg.o [1]
+OS_MsgQPut              0x00008515    0xac  Code  Gb  os_msg.o [1]
+OS_MsgQPut::__func__    0x000133e0     0xc  Data  Lc  os_msg.o [1]
+OS_MutexGrpAdd          0x000097fd     0x8  Code  Gb  os_mutex.o [1]
+OS_MutexGrpPrioFindHighest
+                        0x0000981f    0x38  Code  Gb  os_mutex.o [1]
+OS_MutexGrpRemove       0x00009805    0x1a  Code  Gb  os_mutex.o [1]
+OS_Pend                 0x00008ab9    0x48  Code  Gb  os_core.o [1]
+OS_PendListChangePrio   0x00008b31    0x22  Code  Gb  os_core.o [1]
+OS_PendListInit         0x00008b53     0xa  Code  Gb  os_core.o [1]
+OS_PendListInsertPrio   0x00008b5d    0x66  Code  Gb  os_core.o [1]
+OS_PendListRemove       0x00008bc3    0x5e  Code  Gb  os_core.o [1]
+OS_Post                 0x00008c21    0xa2  Code  Gb  os_core.o [1]
+OS_PrioGetHighest       0x00009099    0x24  Code  Gb  os_prio.o [1]
+OS_PrioInit             0x00009081    0x18  Code  Gb  os_prio.o [1]
+OS_PrioInsert           0x000090bd    0x34  Code  Gb  os_prio.o [1]
+OS_PrioRemove           0x000090f1    0x34  Code  Gb  os_prio.o [1]
+OS_RdyListInit          0x00008cc3    0x20  Code  Gb  os_core.o [1]
+OS_RdyListInsert        0x00008cf9    0x28  Code  Gb  os_core.o [1]
+OS_RdyListInsertHead    0x00008d25    0x34  Code  Gb  os_core.o [1]
+OS_RdyListInsertTail    0x00008d59    0x32  Code  Gb  os_core.o [1]
+OS_RdyListMoveHeadToTail
+                        0x00008d8b    0x4c  Code  Gb  os_core.o [1]
+OS_RdyListRemove        0x00008dd7    0x4c  Code  Gb  os_core.o [1]
+OS_SchedRoundRobin      0x00008e23    0x8c  Code  Gb  os_core.o [1]
+OS_StatTask             0x0000baa5   0x158  Code  Gb  os_stat.o [1]
+OS_StatTaskInit         0x0000bc25    0xb0  Code  Gb  os_stat.o [1]
+OS_StatTaskInit::__func__
+                        0x00013198    0x10  Data  Lc  os_stat.o [1]
+OS_TaskBlock            0x00008eaf    0x2a  Code  Gb  os_core.o [1]
+OS_TaskChangePrio       0x000052e1   0x100  Code  Gb  os_task.o [1]
+OS_TaskInit             0x000051d9    0x18  Code  Gb  os_task.o [1]
+OS_TaskInit::__func__   0x00013434     0xc  Data  Lc  os_task.o [1]
+OS_TaskInitTCB          0x000051f1    0xd6  Code  Gb  os_task.o [1]
+OS_TaskReturn           0x000052c7    0x18  Code  Gb  os_task.o [1]
+OS_TickListInsert       0x0000b6e3    0x78  Code  Gb  os_tick.o [1]
+OS_TickListInsertDly    0x0000b75b    0xd2  Code  Gb  os_tick.o [1]
+OS_TickListInsertDly::__func__
+                        0x00012e54    0x18  Data  Lc  os_tick.o [1]
+OS_TickListRemove       0x0000b839    0x5c  Code  Gb  os_tick.o [1]
+OS_TickListUpdateDly    0x0000b895    0x82  Code  Lc  os_tick.o [1]
+OS_TickListUpdateTimeout
+                        0x0000b945   0x10c  Code  Lc  os_tick.o [1]
+OS_TickTask             0x0000b5e5    0x5a  Code  Gb  os_tick.o [1]
+OS_TickTaskInit         0x0000b63f    0xa4  Code  Gb  os_tick.o [1]
+OS_TickTaskInit::__func__
+                        0x000131d8    0x10  Data  Lc  os_tick.o [1]
+OS_TmrInit              0x0000bd35    0xe4  Code  Gb  os_tmr.o [1]
+OS_TmrInit::__func__    0x0001344c     0xc  Data  Lc  os_tmr.o [1]
+OS_TmrLock              0x0000beed    0x1a  Code  Lc  os_tmr.o [1]
+OS_TmrTask              0x0000be51    0x9c  Code  Gb  os_tmr.o [1]
+OS_TmrUnlink            0x0000be19    0x38  Code  Gb  os_tmr.o [1]
+OS_TmrUnlock            0x0000bf09    0x12  Code  Lc  os_tmr.o [1]
+OperatorQryCmpFun       0x0000f9eb    0x50  Code  Lc  CellularATCommands.o [1]
+ParseGPSReceivedData    0x0000fdad    0x9a  Code  Lc  CellularATCommands.o [1]
+PendSV_Handler          0x0000c061          Code  Gb  armv6m_os_cpu_a.o [1]
+PerformCellularRecovery
+                        0x0000f55b    0x52  Code  Lc  Cellular.o [1]
+PeriodicFunctionCall    0x0000f6fd    0x8a  Code  Lc  Timer.o [1]
+PeriodicFunctionCall::sysTaskScheduleTimeOut
+                        0x200006f0     0x1  Data  Lc  Timer.o [1]
+PostDataToiNet          0x0000f2cd   0x28e  Code  Lc  Cellular.o [1]
+PostDataToiNet::eventSent
+                        0x20005628     0x4  Data  Lc  Cellular.o [1]
+ProcessCannedMessage    0x0000062d    0xda  Code  Lc  SPI_Comm.o [1]
+ProcessFirmwareData     0x00001787   0x140  Code  Lc  SPI_Comm.o [1]
+ProcessFirmwareData::ReceivedDataPackets
+                        0x200056a8     0x4  Data  Lc  SPI_Comm.o [1]
+ProcessFirmwareFooter   0x000018d9    0xcc  Code  Lc  SPI_Comm.o [1]
+ProcessFirmwareHeader   0x000016ad    0xda  Code  Lc  SPI_Comm.o [1]
+ProcessGetRadioConfigureMesssage
+                        0x0000095f    0x26  Code  Lc  SPI_Comm.o [1]
+ProcessIncomingmessage  0x000002c9    0xce  Code  Gb  SPI_Comm.o [1]
+ProcessInstrumentDataMessage
+                        0x000003dd   0x24c  Code  Lc  SPI_Comm.o [1]
+ProcessProximityAlarmMessage
+                        0x00000985   0x11a  Code  Lc  SPI_Comm.o [1]
+ProcessSetRadioConfigureMesssage
+                        0x0000071d   0x242  Code  Lc  SPI_Comm.o [1]
+ProcessWassupAgainMesssage
+                        0x00000abd    0x18  Code  Lc  SPI_Comm.o [1]
+ProcessWassupMesssage   0x00000aa5    0x18  Code  Lc  SPI_Comm.o [1]
+QueuesInit              0x000101bf    0x70  Code  Gb  main.o [1]
+RTCC_ChannelCCVGet      0x000035e9    0x1e  Code  Lc  rtcdriver.o [1]
+RTCC_ChannelCCVSet      0x00003607    0x20  Code  Lc  rtcdriver.o [1]
+RTCC_ChannelInit        0x00006c8d    0x50  Code  Gb  em_rtcc.o [1]
+RTCC_CounterGet         0x00003627     0x6  Code  Lc  rtcdriver.o [1]
+RTCC_IRQHandler         0x00003ac9    0x92  Code  Gb  rtcdriver.o [1]
+RTCC_Init               0x00006cdd    0x7c  Code  Gb  em_rtcc.o [1]
+RTCC_IntClear           0x0000362d     0x6  Code  Lc  rtcdriver.o [1]
+RTCC_IntDisable         0x00003633     0xc  Code  Lc  rtcdriver.o [1]
+RTCC_IntEnable          0x0000363f     0xc  Code  Lc  rtcdriver.o [1]
+RTCC_IntGetEnabled      0x0000364b     0xc  Code  Lc  rtcdriver.o [1]
+RTCDRV_AllocateTimer    0x00003657    0x50  Code  Gb  rtcdriver.o [1]
+RTCDRV_GetWallClock     0x00003a3d    0x2a  Code  Gb  rtcdriver.o [1]
+RTCDRV_GetWallClockTicks32
+                        0x00003a67    0x1a  Code  Gb  rtcdriver.o [1]
+RTCDRV_Init             0x000036a7    0x9a  Code  Gb  rtcdriver.o [1]
+RTCDRV_SetWallClock     0x00003a81    0x36  Code  Gb  rtcdriver.o [1]
+RTCDRV_StartTimer       0x000037a5   0x246  Code  Gb  rtcdriver.o [1]
+RTCDRV_StopTimer        0x000039f1    0x40  Code  Gb  rtcdriver.o [1]
+RTCInit                 0x0000f787    0x26  Code  Gb  Timer.o [1]
+RTCTimerId              0x200056ac     0x4  Data  Lc  Timer.o [1]
+ReadDataFlashStatus     0x00010f0f    0x3c  Code  Lc  DataFlash.o [1]
+ReceiveDmaComplete      0x0000c501   0x134  Code  Lc  uartdrv.o [1]
+Region$$Table$$Base     0x00012c5c           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00012c7c           --   Gb  - Linker created -
+RemoteUnit              0x20004b40    0xa0  Data  Gb  SPI_Comm.o [1]
+ResendFailedChecksumMessage
+                        0x00000b4d     0xa  Code  Lc  SPI_Comm.o [1]
+ReturnEventMessageToPool
+                        0x00003f17    0x44  Code  Gb  Event.o [1]
+ReturnTaskMessageToPool
+                        0x00003ed3    0x26  Code  Gb  Event.o [1]
+RxDMAComplete           0x00003039    0x42  Code  Lc  spidrv.o [1]
+SL_CTZ                  0x000033e3    0x16  Code  Lc  gpiointerrupt.o [1]
+SPIDRV_AbortTransfer    0x000022d9    0x78  Code  Gb  spidrv.o [1]
+SPIDRV_Init             0x000020ad   0x20c  Code  Gb  spidrv.o [1]
+SPIDRV_MTransferB       0x00002391    0x4a  Code  Gb  spidrv.o [1]
+SPIDRV_MTransmitB       0x000023e9    0x3c  Code  Gb  spidrv.o [1]
+SPIDRV_STransfer        0x00002435    0x6e  Code  Gb  spidrv.o [1]
+SPISlaveConfigure       0x0000022f    0x5a  Code  Gb  SPI_Comm.o [1]
+SPITransferCompleteFxn  0x000001a7     0x2  Code  Lc  SPI_Comm.o [1]
+SYSTaskStack            0x200016f4   0x800  Data  Lc  main.o [1]
+SYSTaskTCB              0x20004c74    0x94  Data  Gb  main.o [1]
+SaveCurrentDeviceParameters
+                        0x000109e3   0x18a  Code  Gb  FileCommit.o [1]
+SendPeriodicGPSMessage  0x000117e3    0x80  Code  Lc  SysTask.o [1]
+SendPeriodicGPSMessage::GPSPeriodicTimeout
+                        0x200006ea     0x2  Data  Lc  SysTask.o [1]
+SendPeriodicGPSMessage::counter
+                        0x200056d4     0x1  Data  Lc  SysTask.o [1]
+SendPriodicCommMessage  0x00011791    0x52  Code  Lc  SysTask.o [1]
+SendPriodicCommMessage::mailBoxPeriodicTimeout
+                        0x200006e8     0x2  Data  Lc  SysTask.o [1]
+SetupGpioUart           0x0000c709   0x564  Code  Lc  uartdrv.o [1]
+ShowIPCmpFun            0x0000faa7    0x52  Code  Lc  CellularATCommands.o [1]
+SignalStrengthCmpFun    0x0000f94d    0x48  Code  Lc  CellularATCommands.o [1]
+SlaveTimeout            0x0000307b    0x6e  Code  Lc  spidrv.o [1]
+SocDirectLinkCmpFun     0x0000fbf9    0x36  Code  Lc  CellularATCommands.o [1]
+SocketDataReadWriteCmpFun
+                        0x0000fc4d    0xc4  Code  Lc  CellularATCommands.o [1]
+SocketOpenCmpFun        0x0000fbb5    0x36  Code  Lc  CellularATCommands.o [1]
+StartReceiveDma         0x0000c43f    0x5a  Code  Lc  uartdrv.o [1]
+StartTransfer           0x00006a41   0x18c  Code  Lc  dmadrv.o [1]
+StartTransferDMA        0x000030e9    0x8a  Code  Lc  spidrv.o [1]
+StartTransmitDMA        0x00003179    0x8c  Code  Lc  spidrv.o [1]
+StartTransmitDma        0x0000c499    0x5a  Code  Lc  uartdrv.o [1]
+SysTask                 0x000118e7    0xe6  Code  Gb  SysTask.o [1]
+SysTick_Config          0x0001005b    0x32  Code  Lc  main.o [1]
+SysTick_Handler         0x0000900d    0x1e  Code  Gb  armv6m_os_cpu_c.o [1]
+SystemCoreClock         0x20000560     0x4  Data  Gb  system_efm32tg11b.o [1]
+SystemCoreClockGet      0x00009859    0x1e  Code  Gb  system_efm32tg11b.o [1]
+SystemHFClockGet        0x0000987b    0x40  Code  Gb  system_efm32tg11b.o [1]
+SystemHFXOClock         0x20000558     0x4  Data  Lc  system_efm32tg11b.o [1]
+SystemHFXOClockGet      0x000098bb     0x6  Code  Gb  system_efm32tg11b.o [1]
+SystemHfrcoFreq         0x20000564     0x4  Data  Gb  system_efm32tg11b.o [1]
+SystemInit              0x000098c1     0x2  Code  Gb  system_efm32tg11b.o [1]
+SystemLFRCOClockGet     0x000098c3     0x6  Code  Gb  system_efm32tg11b.o [1]
+SystemLFXOClock         0x2000055c     0x4  Data  Lc  system_efm32tg11b.o [1]
+SystemLFXOClockGet      0x000098cf     0x6  Code  Gb  system_efm32tg11b.o [1]
+SystemMaxCoreClockGet   0x00009877     0x4  Code  Gb  system_efm32tg11b.o [1]
+SystemULFRCOClockGet    0x000098c9     0x6  Code  Gb  system_efm32tg11b.o [1]
+TCPSocketCmpFun         0x0000fb5d    0x4a  Code  Lc  CellularATCommands.o [1]
+TIMER0_IRQHandler       0x00012afd    0x1e  Code  Gb  ustimer.o [1]
+TIMER_IntClear          0x00012af5     0x4  Code  Lc  ustimer.o [1]
+TIMER_IntGet            0x00012af9     0x4  Code  Lc  ustimer.o [1]
+TimeQryCmpFun           0x0000fa3b    0x6c  Code  Lc  CellularATCommands.o [1]
+TokenizeString          0x0000fe79    0x7c  Code  Lc  CellularATCommands.o [1]
+TransferApiBlockingPrologue
+                        0x00003205    0x4a  Code  Lc  spidrv.o [1]
+TransferApiPrologue     0x0000324f    0x4a  Code  Lc  spidrv.o [1]
+TransmitDmaComplete     0x0000c635    0x88  Code  Lc  uartdrv.o [1]
+UARTDRV_Abort           0x0000cfc1   0x15c  Code  Gb  uartdrv.o [1]
+UARTDRV_DeInit          0x0000cf21    0x96  Code  Gb  uartdrv.o [1]
+UARTDRV_FlowControlSet  0x0000d1ed     0x6  Code  Gb  uartdrv.o [1]
+UARTDRV_GetPeripheralStatus
+                        0x0000d11d    0x6c  Code  Gb  uartdrv.o [1]
+UARTDRV_GetReceiveStatus
+                        0x0000d189    0x64  Code  Gb  uartdrv.o [1]
+UARTDRV_InitUart        0x0000cd2d   0x19e  Code  Gb  uartdrv.o [1]
+UARTDRV_ReceiveB        0x0000d201    0x72  Code  Gb  uartdrv.o [1]
+UARTDRV_TransmitB       0x0000d273    0x72  Code  Gb  uartdrv.o [1]
+UARTReadBlocking        0x0000f0ed    0x54  Code  Lc  Cellular.o [1]
+UARTReadParser          0x0000f081    0x36  Code  Lc  Cellular.o [1]
+USART_BaudrateAsyncSet  0x000062cd    0xda  Code  Gb  em_usart.o [1]
+USART_BaudrateSyncSet   0x000063a7    0x42  Code  Gb  em_usart.o [1]
+USART_Enable            0x000063e9    0x42  Code  Gb  em_usart.o [1]
+USART_InitAsync         0x00006435    0xaa  Code  Gb  em_usart.o [1]
+USART_InitSync          0x000064e5    0xba  Code  Gb  em_usart.o [1]
+USART_IntClear          0x0000c2ad     0x4  Code  Lc  uartdrv.o [1]
+USART_Reset             0x000065c9    0x7a  Code  Gb  em_usart.o [1]
+UpdateIntrumentData     0x00000289    0x2e  Code  Lc  SPI_Comm.o [1]
+UpdateRTCTime           0x0000f7dd    0x98  Code  Gb  Timer.o [1]
+WDOGn_Feed              0x00010619    0x1a  Code  Gb  em_wdog.o [1]
+WDOGn_Init              0x00010633    0x86  Code  Gb  em_wdog.o [1]
+WaitDataFlashToGetReady
+                        0x00010e91    0x2a  Code  Lc  DataFlash.o [1]
+WaitForCellularGetReady
+                        0x0000f631     0xe  Code  Lc  Cellular.o [1]
+WaitForIdleLine         0x000032d7    0x2a  Code  Lc  spidrv.o [1]
+WaitForTransferCompletion
+                        0x000032b1    0x26  Code  Lc  spidrv.o [1]
+WarmupCellularModule    0x0000f15d   0x116  Code  Lc  Cellular.o [1]
+_Close_all              0x000127b1    0x38  Code  Gb  xcloseall.o [3]
+_Files                  0x200006c0    0x20  Data  Gb  xfiles.o [3]
+_Fofree                 0x00012099    0x90  Code  Gb  xfofind.o [3]
+_Fspos                  0x00011c95    0xe0  Code  Gb  xfspos.o [3]
+_Fwprep                 0x00011fb5    0xc0  Code  Gb  xfwprep.o [3]
+_GenldFullNoMb          0x0000aa19   0x27c  Code  Lc  xprintffull_nomb.o [3]
+_GetN                   0x0000d365    0x26  Code  Lc  xscanffull_nomb.o [3]
+_GetfldFullNoMb         0x0000d565   0x124  Code  Lc  xscanffull_nomb.o [3]
+_GetfloatFullNoMb       0x0000db6d   0x5b8  Code  Lc  xscanffull_nomb.o [3]
+_GetintFullNoMb         0x0000d8f5   0x254  Code  Lc  xscanffull_nomb.o [3]
+_GetstrFullNoMb         0x0000d6e9   0x1c2  Code  Lc  xscanffull_nomb.o [3]
+_LdtobFullNoMb          0x0000a5a1   0x462  Code  Lc  xprintffull_nomb.o [3]
+_LitobFullNoMb          0x0000a435   0x11a  Code  Lc  xprintffull_nomb.o [3]
+_LocaleC_isalpha        0x0000c14f     0xc  Code  Gb  xlocale_c.o [3]
+_LocaleC_islower        0x0000c149     0x4  Code  Gb  xlocale_c.o [3]
+_LocaleC_isspace        0x0000c165    0x14  Code  Gb  xlocale_c.o [3]
+_LocaleC_isupper        0x0000c14d     0x2  Code  Gb  xlocale_c.o [3]
+_LocaleC_tolower        0x0000c179     0xc  Code  Gb  xlocale_c.o [3]
+_Locale_lconv           0x20000568    0x38  Data  Lc  xlocale_c.o [3]
+_Nnl                    0x00011e29     0xc  Code  Gb  xfgpos.o [3]
+_PrintfFullNoMb         0x00009e51   0x1a0  Code  Gb  xprintffull_nomb.o [3]
+_Prout                  0x00012e85    0x16  Code  Gb  xprout.o [3]
+_PutcharsFullNoMb       0x0000ac95    0x32  Code  Lc  xprintffull_nomb.o [3]
+_PutfldFullNoMb         0x0000a071   0x264  Code  Lc  xprintffull_nomb.o [3]
+_PuttxtFullNoMb         0x0000a321   0x114  Code  Lc  xprintffull_nomb.o [3]
+_SNProut                0x00012da9    0x1c  Code  Gb  xsnprout.o [3]
+_SProut                 0x00006c83     0xa  Code  Gb  xsprout.o [3]
+_SScin                  0x0000667b    0x22  Code  Gb  xsscin.o [3]
+_ScanfFullNoMb          0x0000d3a9   0x1a6  Code  Gb  xscanffull_nomb.o [3]
+_Ttotm_ts               0x200054f0    0x2c  Data  Lc  xttotm.o [3]
+_Tzoff                  0x000106b9     0x4  Code  Gb  xTzoff_nop.o [3]
+_UngetN                 0x0000d38b    0x1e  Code  Lc  xscanffull_nomb.o [3]
+__CLZ                   0x00003595    0x16  Code  Lc  rtcdriver.o [1]
+__Vectors               0x00000000           --   Gb  startup_efm32tg11b.o [1]
+__Vectors_End           0x000000c0          Data  Gb  startup_efm32tg11b.o [1]
+__Vectors_Size {Abs}    0x000000c0           --   Gb  startup_efm32tg11b.o [1]
+__aeabi_cdcmpeq         0x0000accb          Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x0000acef          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x0000b0ab          Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f             0x00007afb          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x0000b059          Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x0000b07d          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x0000aea5          Code  Gb  DblAddSub.o [4]
+__aeabi_ddiv            0x00007a39          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x0000ad21          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x0000af6b          Code  Gb  DblAddSub.o [4]
+__aeabi_f2d             0x00007b5d          Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x00007c39          Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x00007cab          Code  Gb  FltAddSub.o [4]
+__aeabi_fdiv            0x00007b8f          Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x00007dcb          Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x00007d1b          Code  Gb  FltAddSub.o [4]
+__aeabi_i2d             0x00006ead          Code  Gb  IxxToDbl.o [4]
+__aeabi_i2f             0x00007c95          Code  Gb  IxxToFlt.o [4]
+__aeabi_idiv            0x000034e1          Code  Gb  I32DivModFast.o [5]
+__aeabi_idiv0           0x00006c81          Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod         0x000034e1          Code  Gb  I32DivModFast.o [5]
+__aeabi_ldiv0           0x00009e4d          Code  Gb  I64DivZer.o [5]
+__aeabi_lmul            0x00006d65          Code  Gb  I64Mul.o [5]
+__aeabi_memclr          0x00003351          Code  Gb  ABImemset.o [5]
+__aeabi_memclr4         0x00003355          Code  Gb  ABImemset.o [5]
+__aeabi_memclr8         0x00003355          Code  Gb  ABImemset.o [5]
+__aeabi_memcpy          0x00003359          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00003381          Code  Wk  ABImemcpy.o [5]
+__aeabi_memset          0x00003301          Code  Gb  ABImemset.o [5]
+__aeabi_ui2d            0x00006e8d          Code  Gb  IxxToDbl.o [4]
+__aeabi_ui2f            0x00007c75          Code  Gb  IxxToFlt.o [4]
+__aeabi_uidiv           0x000034e7          Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x000034e7          Code  Gb  I32DivModFast.o [5]
+__aeabi_uldivmod        0x00006d97          Code  Gb  I64DivMod.o [5]
+__basic_free            0x00011ad3    0x16  Code  Gb  heap0.o [3]
+__basic_free_intern     0x00011ae9    0x7a  Code  Lc  heap0.o [3]
+__basic_malloc          0x00011a25    0x18  Code  Gb  heap0.o [3]
+__basic_malloc_intern   0x00011a3d    0x96  Code  Lc  heap0.o [3]
+__cexit_closeall        0x00012d2b          Code  Gb  cexit.o [5]
+__close                 0x000121b9    0x18  Code  Gb  close.o [6]
+__cmain                 0x00012cfd          Code  Gb  cmain.o [5]
+__cstart_closeall       0x000135b8          Data  Gb  cstart_closeall.o [5]
+__data_GetMemChunk      0x00011b69    0x2c  Code  Gb  xgetmemchunk.o [3]
+__data_GetMemChunk::start
+                        0x200056b4     0x4  Data  Lc  xgetmemchunk.o [3]
+__dwrite                0x00011f55    0x1e  Code  Gb  dwrite.o [6]
+__exit                  0x0000c215    0x14  Code  Gb  exit.o [6]
+__gmtime32              0x00007e7b     0xe  Code  Gb  gmtime.o [3]
+__iar_Daysto32          0x0000c19d    0x3a  Code  Gb  xDaysTo.o [3]
+__iar_Exp64             0x0000b0dd   0x3bc  Code  Gb  iar_Exp64.o [4]
+__iar_Fail_s            0x0000c0d9    0x22  Code  Gb  xfail_s.o [3]
+__iar_Isdst32           0x0000c195     0x6  Code  Gb  xisdst_nop.o [3]
+__iar_Memset4_word      0x00003321          Code  Gb  ABImemset.o [5]
+__iar_Memset_word       0x0000330d          Code  Gb  ABImemset.o [5]
+__iar_Pow64             0x00006ec1   0x6cc  Code  Lc  pow64.o [4]
+__iar_Stderr            0x20000678    0x48  Data  Gb  xfiles.o [3]
+__iar_Stdin             0x200005e8    0x48  Data  Gb  xfiles.o [3]
+__iar_Stdout            0x20000630    0x48  Data  Gb  xfiles.o [3]
+__iar_Sto64             0x0000e6a9   0x142  Code  Gb  strto64.o [4]
+__iar_Stoflt            0x0000e95d   0x1ec  Code  Gb  iar_Stoflt.o [3]
+__iar_Stollx            0x0000e167    0x9e  Code  Gb  iar_Stollx.o [3]
+__iar_Stolx             0x000102a9    0x82  Code  Gb  iar_Stolx.o [3]
+__iar_Stopfx            0x0000e843   0x118  Code  Gb  iar_Stopfx.o [3]
+__iar_Stoullx           0x0000e211   0x172  Code  Gb  iar_Stoullx.o [3]
+__iar_Stoulx            0x0001047d   0x13c  Code  Gb  iar_Stoulx.o [3]
+__iar_Stoxflt           0x0000eb49   0x20a  Code  Gb  iar_Stoxflt.o [3]
+__iar_Stoxflt::digits   0x0000ed58    0x18  Data  Lc  iar_Stoxflt.o [3]
+__iar_Stoxflt::vals     0x0000ed70    0x18  Data  Lc  iar_Stoxflt.o [3]
+__iar_Strchr            0x0000b5b1     0x2  Code  Gb  strchr.o [5]
+__iar_Ttotm32           0x0000b499    0xda  Code  Gb  xttotm.o [3]
+__iar_close_ttio        0x0000c229    0x2c  Code  Gb  iarttio.o [6]
+__iar_d2uiz             0x0000b081          Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x00012bed    0x28  Code  Gb  data_init.o [5]
+__iar_get_ttio          0x0000c255    0x4c  Code  Gb  iarttio.o [6]
+__iar_globLocale        0x200005a0    0x48  Data  Lc  xlocale_c.o [3]
+__iar_global_Locale     0x0000c185     0x4  Code  Gb  xlocale_c.o [3]
+__iar_lookup_ttioh      0x0000c2a5     0x8  Code  Gb  XShttio.o [3]
+__iar_lz77_init_single3
+                        0x000121e5    0x80  Code  Gb  lz77_init_single.o [5]
+__iar_pow64             0x00007609     0xc  Code  Gb  pow64.o [4]
+__iar_pow_medium        0x00007609     0xc  Code  Gb  pow64.o [4]
+__iar_pow_medium64      0x00007609     0xc  Code  Gb  pow64.o [4]
+__iar_pow_mediuml       0x00007609     0xc  Code  Gb  pow64.o [4]
+__iar_program_start     0x00013465          Code  Gb  cstartup_M.o [5]
+__iar_sh_Discard        0x00011e91    0x3e  Code  Gb  XShHandles.o [3]
+__iar_sh_Move           0x00011ecf    0x44  Code  Gb  XShHandles.o [3]
+__iar_sh_Pos            0x00011f13    0x3c  Code  Gb  XShHandles.o [3]
+__iar_sh_stdout         0x00011f73    0x20  Code  Gb  iarwstd.o [6]
+__iar_sh_write          0x00011f93    0x22  Code  Gb  iarwrite.o [6]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__iar_ttio_handles      0x200006e0     0x8  Data  Lc  XShttio.o [3]
+__iar_zero_init3        0x00012775    0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00012d1b     0x4  Code  Gb  low_level_init.o [3]
+__lseek                 0x00011e35    0x4a  Code  Gb  lseek.o [6]
+__mktime32              0x00010335    0xf8  Code  Gb  mktime.o [3]
+__vector_table          0x00000000          Data  Gb  startup_efm32tg11b.o [1]
+__vector_table_0x1c     0x0000001c          Data  Gb  startup_efm32tg11b.o [1]
+__write                 0x00011e7f    0x10  Code  Gb  write.o [6]
+_call_main              0x00012d09          Code  Gb  cmain.o [5]
+_exit                   0x00012d29          Code  Gb  cexit.o [5]
+_main                   0x00012d17          Code  Gb  cmain.o [5]
+abort                   0x0000c209     0xa  Code  Gb  abort.o [3]
+adcAsyncClkGet          0x000054e7    0x5c  Code  Lc  em_cmu.o [1]
+assertEFM               0x00001b01     0x4  Code  Gb  em_assert.o [1]
+atof                    0x0000e811     0xe  Code  Gb  strto64.o [4]
+atoi                    0x000105b9     0x4  Code  Gb  iar_Stoulx.o [3]
+auxClkGet               0x00005495     0x6  Code  Lc  em_cmu.o [1]
+auxHfrcoFreq            0x20000518     0x4  Data  Lc  em_cmu.o [1]
+cellDataBuffer          0x20002c50   0x400  Data  Gb  Cellular.o [1]
+cellHeaderBuffer        0x20004570   0x12c  Data  Gb  Cellular.o [1]
+cellHttpsReceiving      0x2000551c    0x24  Data  Gb  Cellular.o [1]
+cellUART                0x20000000     0x4  Data  Gb  Cellular.o [1]
+cellUARTHandleData      0x200054bc    0x34  Data  Gb  Cellular.o [1]
+chTable                 0x20004fd8    0x80  Data  Lc  dmadrv.o [1]
+checkAllTimers          0x00003b69   0x1b6  Code  Lc  rtcdriver.o [1]
+coreClkFreq             0x2000562c     0x4  Data  Gb  main.o [1]
+dataFlashCommandBuffer  0x2000469c   0x108  Data  Lc  DataFlash.o [1]
+dataFlashResponseBuffer
+                        0x200047a4   0x108  Data  Lc  DataFlash.o [1]
+dataFlashSPIHandle      0x20000514     0x4  Data  Gb  DataFlash.o [1]
+dataFlashSPIHandleData  0x200052f0    0x58  Data  Gb  DataFlash.o [1]
+dataSize                0x20005624     0x4  Data  Gb  Cellular.o [1]
+dbgClkGet               0x000054b1    0x36  Code  Lc  em_cmu.o [1]
+ddiv                    0x0000e44d    0x64  Code  Lc  strto64.o [4]
+deviceParams            0x200050d8    0x7c  Data  Gb  SysTask.o [1]
+digits                  0x000105c8    0x28  Data  Lc  iar_Stoulx.o [3]
+digits                  0x0000e398    0x28  Data  Lc  iar_Stoullx.o [3]
+dmaXfer                 0x200048ac   0x100  Data  Lc  dmadrv.o [1]
+dmul                    0x0000e3e9    0x64  Code  Lc  strto64.o [4]
+ebuf                    0x200053a0    0x50  Data  Lc  xfiles.o [3]
+evensMessageQueueData   0x20001ef4   0x780  Data  Lc  main.o [1]
+eventMessagesFreeQueue  0x200055a8    0x18  Data  Gb  main.o [1]
+eventMessagesQueue      0x20005590    0x18  Data  Gb  main.o [1]
+executeTimerCallbacks   0x00003d1f    0x34  Code  Lc  rtcdriver.o [1]
+exit                    0x00012d1f     0x8  Code  Gb  exit.o [3]
+fclose                  0x00012139    0x80  Code  Gb  fclose.o [3]
+fflush                  0x00011de7    0x38  Code  Gb  fflush.o [3]
+fflushOne               0x00011d75    0x72  Code  Lc  fflush.o [3]
+firmwareFileDescriptor  0x200055f8    0x10  Data  Gb  SysTask.o [1]
+flashWaitStateControl   0x00005543    0x66  Code  Lc  em_cmu.o [1]
+flashWaitStateMax       0x000055a9    0x30  Code  Lc  em_cmu.o [1]
+flashWsTable            0x00012b4c    0x28  Data  Lc  em_cmu.o [1]
+fputc                   0x000123bd    0x54  Code  Gb  fputc.o [3]
+free                    0x00012131     0x8  Code  Gb  heaptramp0.o [3]
+fseek                   0x00012075    0x24  Code  Gb  fseek.o [3]
+fwFile                  0x20005154    0x64  Data  Gb  SysTask.o [1]
+gCellularDriver         0x20002674   0x5dc  Data  Gb  Cellular.o [1]
+getHfxoTuningMode       0x0000560b     0xc  Code  Lc  em_cmu.o [1]
+gmtime                  0x00007e7b     0xe  Code  Gb  gmtime.o [3]
+gpioCallbacks           0x20005440    0x40  Data  Lc  gpiointerrupt.o [1]
+hfSrcClkGet             0x0000549b    0x16  Code  Lc  em_cmu.o [1]
+httpUrlBuffer           0x20004f58    0x80  Data  Gb  Cellular.o [1]
+iNetEventId             0x20005540    0x1c  Data  Lc  ExtCommunication.o [1]
+inTimerIRQ              0x200056cd     0x1  Data  Lc  rtcdriver.o [1]
+inetwasdev1Cert         0x00011238   0x558  Data  Gb  ExtCommunication.o [1]
+initRTCC                0x20000540     0xc  Data  Lc  rtcdriver.o [1]
+initRTCCCompareChannel  0x2000054c     0x8  Data  Lc  rtcdriver.o [1]
+initialized             0x200056c0     0x1  Data  Lc  dmadrv.o [1]
+isCellularReadyToSleep  0x200006ed     0x1  Data  Gb  main.o [1]
+isGPSinit               0x200056be     0x1  Data  Lc  Cellular.o [1]
+isQuickStatusMessageSent
+                        0x200056d1     0x1  Data  Lc  SPI_Comm.o [1]
+isRadioConfigMessageSent
+                        0x200056d2     0x1  Data  Lc  SPI_Comm.o [1]
+isSpiReadyToSleep       0x200006ec     0x1  Data  Gb  main.o [1]
+isStatusMessageSent     0x200056d0     0x1  Data  Lc  SPI_Comm.o [1]
+isalpha                 0x0000e81f    0x12  Code  Gb  isalpha.o [3]
+isspace                 0x0000e155    0x12  Code  Gb  isspace.o [3]
+jsmn_alloc_token        0x00007e89    0x2c  Code  Lc  jsmn.o [1]
+jsmn_fill_token         0x00007eb5    0x10  Code  Lc  jsmn.o [1]
+jsmn_init               0x0000832d    0x10  Code  Gb  jsmn.o [1]
+jsmn_parse              0x00008083   0x2aa  Code  Gb  jsmn.o [1]
+jsmn_parse_primitive    0x00007ec5    0x9a  Code  Lc  jsmn.o [1]
+jsmn_parse_string       0x00007f5f   0x124  Code  Lc  jsmn.o [1]
+jsonCreatorAndParser    0x2000051c    0x18  Data  Gb  ExtCommunication.o [1]
+lastStart               0x2000568c     0x4  Data  Lc  rtcdriver.o [1]
+lfClkGet                0x00005645    0xce  Code  Lc  em_cmu.o [1]
+lmos                    0x0000b580    0x18  Data  Lc  xttotm.o [3]
+lmos                    0x0000c1d8    0x18  Data  Lc  xDaysTo.o [3]
+lnbias                  0x00007618   0x420  Data  Lc  pow64.o [4]
+localeconv              0x0000c189     0x4  Code  Gb  xlocale_c.o [3]
+m2p                     0x000130e8    0x10  Data  Gb  dmadrv.o [1]
+main                    0x0001008f   0x130  Code  Gb  main.o [1]
+memchr                  0x0000c131    0x18  Code  Gb  memchr.o [5]
+mktime                  0x00010335    0xf8  Code  Gb  mktime.o [3]
+mos                     0x0000b598    0x18  Data  Lc  xttotm.o [3]
+mos                     0x0000c1f0    0x18  Data  Lc  xDaysTo.o [3]
+ndigs                   0x000105f0    0x28  Data  Lc  iar_Stoulx.o [3]
+ndigs                   0x0000e3c0    0x28  Data  Lc  iar_Stoullx.o [3]
+obuf                    0x200053f0    0x50  Data  Lc  xfiles.o [3]
+p2m                     0x000130f8    0x10  Data  Gb  dmadrv.o [1]
+pow                     0x00007609     0xc  Code  Gb  pow64.o [4]
+powl                    0x00007609     0xc  Code  Gb  pow64.o [4]
+pows                    0x0000e660    0x48  Data  Lc  strto64.o [4]
+printf                  0x00010455    0x28  Code  Gb  printf.o [3]
+putchar                 0x00012e9d    0x10  Code  Gb  putchar.o [3]
+ranmatch                0x0000d6a5    0x44  Code  Lc  xscanffull_nomb.o [3]
+referenceSiteName       0x200055e8    0x10  Data  Gb  SPI_Comm.o [1]
+referenceUserName       0x200055d8    0x10  Data  Gb  SPI_Comm.o [1]
+remove                  0x000121d1    0x14  Code  Gb  remove.o [6]
+rescheduleRtc           0x00003d53    0x8c  Code  Lc  rtcdriver.o [1]
+rtcRunning              0x200056ce     0x1  Data  Lc  rtcdriver.o [1]
+rtcdrvIsInitialized     0x200056cf     0x1  Data  Lc  rtcdriver.o [1]
+sFileInfo               0x20005058    0x80  Data  Lc  XShHandles.o [3]
+scale                   0x0000a54f    0x48  Code  Lc  xprintffull_nomb.o [3]
+sec_hand                0x200056b0     0x4  Data  Lc  xfail_s.o [3]
+setHfLeConfig           0x00005459    0x3c  Code  Lc  em_cmu.o [1]
+setHfxoTuningMode       0x00005617    0x12  Code  Lc  em_cmu.o [1]
+slaveRxBuffer           0x20005230    0x60  Data  Gb  SPI_Comm.o [1]
+slaveTxBuffer           0x20005290    0x60  Data  Gb  SPI_Comm.o [1]
+snprintf                0x00006e01    0x4c  Code  Gb  snprintf.o [3]
+spidrvIsInitialized     0x200056d3     0x1  Data  Lc  spidrv.o [1]
+sprintf                 0x00006e4d    0x40  Code  Gb  sprintf.o [3]
+sscanf                  0x0001042d    0x28  Code  Gb  sscanf.o [3]
+startTimerNestingLevel  0x20005690     0x4  Data  Lc  rtcdriver.o [1]
+strchr                  0x0000b5b3     0x2  Code  Gb  strchr.o [5]
+strcmp                  0x00003e09          Code  Gb  strcmp.o [5]
+strlen                  0x0000c121    0x10  Code  Gb  strlen.o [5]
+strncmp                 0x0000833d    0x2c  Code  Gb  strncmp.o [3]
+strncpy                 0x00003e91    0x24  Code  Gb  strncpy.o [5]
+strstr                  0x00008369    0x32  Code  Gb  strstr.o [3]
+strtol                  0x0001032b     0xa  Code  Gb  iar_Stolx.o [3]
+strtoll                 0x0000e205     0xa  Code  Gb  iar_Stollx.o [3]
+strtoull                0x0000e38d     0xa  Code  Gb  iar_Stoullx.o [3]
+syncReg                 0x00005719    0x16  Code  Lc  em_cmu.o [1]
+taskMessageQueuesData   0x200049ac    0xf0  Data  Lc  main.o [1]
+taskMessagesFreeQueue   0x200055c0    0x18  Data  Gb  main.o [1]
+timeElapsed             0x200056d5     0x1  Data  Lc  ustimer.o [1]
+timer                   0x20004aa0    0xa0  Data  Lc  rtcdriver.o [1]
+tokenBuffer             0x20005480    0x3c  Data  Gb  Cellular.o [1]
+tolower                 0x0000e831    0x12  Code  Gb  tolower.o [3]
+vScaleEM01Cmd           0x00009923     0xc  Code  Lc  em_emu.o [1]
+vScaleEM01Config        0x200056c1     0x1  Data  Lc  em_emu.o [1]
+vproComSPIHandleData    0x20005348    0x58  Data  Gb  SPI_Comm.o [1]
+vproCommSPIHandle       0x20000554     0x4  Data  Gb  SPI_Comm.o [1]
+wDogInitParam           0x20000534     0xc  Data  Gb  main.o [1]
+wallClockOverflowCnt    0x20005694     0x4  Data  Lc  rtcdriver.o [1]
+wallClockTimeBase       0x20005698     0x4  Data  Lc  rtcdriver.o [1]
+
+
+[1] = D:\ISC\Frey\Frey Firmware\Src\Debug\Obj
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  73 197 bytes of readonly  code memory
+   6 661 bytes of readonly  data memory
+  25 299 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
